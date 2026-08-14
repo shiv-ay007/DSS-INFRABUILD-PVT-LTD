@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <rect width="100" height="100" rx="16" fill="#ffffff"/>
+  <!-- 7-Segment style DSS mark -->
+  <g fill="#111111">
+    <!-- Letter D -->
+    <rect x="10" y="24" width="4" height="24" rx="1"/>
+    <rect x="10" y="50" width="4" height="24" rx="1"/>
+    <polygon points="15,24 30,24 27,29 15,29"/>
+    <rect x="27" y="27" width="4" height="20" rx="1"/>
+    <rect x="27" y="51" width="4" height="20" rx="1"/>
+    <polygon points="15,69 27,69 30,74 15,74"/>
+    <!-- Letter S -->
+    <polygon points="36,24 53,24 51,29 38,29"/>
+    <rect x="35" y="27" width="4" height="20" rx="1"/>
+    <polygon points="38,46 51,46 53,51 36,51"/>
+    <rect x="49" y="49" width="4" height="22" rx="1"/>
+    <polygon points="36,69 51,69 53,74 36,74"/>
+  </g>
+  <!-- Skyscraper Buildings with Orange Accent -->
+  <g fill="#111111">
+    <polygon points="58,38 66,32 66,74 58,74"/>
+    <polygon points="68,26 78,18 78,74 68,74"/>
+    <polygon points="80,16 90,12 90,74 80,74"/>
+  </g>
+  <!-- Orange swoop arch -->
+  <path d="M54,72 Q72,62 92,30" fill="none" stroke="#e05609" stroke-width="3" stroke-linecap="round"/>
+  <!-- Bottom Baseline -->
+  <rect x="8" y="78" width="84" height="3" fill="#e05609" rx="1.5"/>
+</svg>

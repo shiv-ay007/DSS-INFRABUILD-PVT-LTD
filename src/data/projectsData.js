@@ -1,0 +1,277 @@
+export const allProjects = [
+  {
+    id: 1,
+    title: "Apex Corporate Landmark Towers",
+    category: "Commercial",
+    location: "Gomti Nagar, Lucknow",
+    builtUpArea: "340,000 sq.ft.",
+    area: "340,000 Sq. Ft.",
+    duration: "28 Months",
+    status: "Completed",
+    progress: "100%",
+    client: "Apex Enterprise Group",
+    architect: "DSS Architecture Group",
+    contractType: "Turnkey",
+    year: "2024",
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85",
+    desc: "18-story multi-tenant corporate headquarters featuring double-glazed curtain glass facade, intelligent HVAC climate control, and post-tensioned wide-span floors.",
+    overviewParagraphs: [
+      "Apex Corporate Landmark Towers stands as a beacon of modern corporate infrastructure in Lucknow's premier business district. Spanning 340,000 sq. ft. across 18 floors, this Grade-A commercial complex combines cutting-edge architecture with sustainable engineering.",
+      "Engineered with post-tensioned wide-span floor plates, double-glazed acoustic curtain walling, and automated building management systems, the development provides world-class executive workspaces for multinational enterprises.",
+    ],
+    challenge:
+      "The site had high ground water levels requiring extensive dewatering and deep foundation work. Additionally, executing wide-span post-tensioned slabs in a dense commercial zone required strict noise and traffic management.",
+    solution:
+      "Implemented a contiguous pile wall with multi-stage dewatering. Utilized 3D BIM clash detection for precision MEP routing and deployed automated concrete pumps with night-time pouring to finish ahead of schedule.",
+    highlights: [
+      "Grade-A Commercial Space with LEED Gold Certification",
+      "Automated Multi-Level Hydraulic Parking System",
+      "High-Efficiency Centralized HVAC with DALI Lighting",
+      "3D BIM Clash-Free Construction Execution",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80",
+    ],
+  },
+  {
+    id: 2,
+    title: "The Grand Royal Villa Enclave",
+    category: "Residential",
+    location: "Sultanpur Road, Lucknow",
+    builtUpArea: "180,000 sq.ft.",
+    area: "180,000 Sq. Ft.",
+    duration: "18 Months",
+    status: "Completed",
+    progress: "100%",
+    client: "Royal Estates Ltd.",
+    architect: "Modern Design Studio",
+    contractType: "EPC & Turnkey",
+    year: "2023",
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
+    desc: "Ultra-luxury gated enclave of 24 bespoke Mediterranean villas with imported Italian marble flooring, private infinity plunge pools, and solar-smart roofing.",
+    overviewParagraphs: [
+      "The Grand Royal Villa Enclave represents the pinnacle of luxury living in Lucknow. Comprising 24 bespoke Mediterranean-inspired villas, each residence is crafted with meticulous attention to detail, spatial balance, and structural longevity.",
+      "The enclave features underground utility conduits, private landscaped courtyards, solar rooftop integration, and state-of-the-art smart home automation systems tailored for high-profile homeowners.",
+    ],
+    challenge:
+      "Balancing intricate architectural detailing with strict structural waterproofing requirements for private basement entertainment suites and rooftop infinity plunge pools across all 24 villas.",
+    solution:
+      "Used multi-layer polymer elastomeric waterproofing membranes and monolithic RCC pool casting with crystalline admixtures, coupled with bespoke pre-cast decorative facade moldings.",
+    highlights: [
+      "Bespoke Ultra-Luxury Mediterranean Architecture",
+      "Private Landscaped Gardens & Infinity Plunge Pools",
+      "Underground Utility Tunneling & Zero-Drainage Systems",
+      "Integrated Smart Home Automation & Security",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    ],
+  },
+  {
+    id: 3,
+    title: "Varanasi Mega Logistics & PEB Park",
+    category: "Industrial",
+    location: "Varanasi Industrial Corridor",
+    builtUpArea: "520,000 sq.ft.",
+    area: "520,000 Sq. Ft.",
+    duration: "24 Months",
+    status: "Completed",
+    progress: "100%",
+    client: "National Logistics Hub",
+    architect: "Structural Engineers India",
+    contractType: "Turnkey PEB",
+    year: "2024",
+    image:
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
+    desc: "Heavy-duty clear-span pre-engineered steel warehouse park engineered with laser-leveled FM2 industrial flooring and automated dock levelers.",
+    overviewParagraphs: [
+      "Strategically situated along the Varanasi Industrial Corridor, this 520,000 sq. ft. mega logistics facility is built for heavy-throughput national supply chain operations.",
+      "Equipped with 45-meter clear-span PEB steel frames, laser-screeded FM2 industrial flooring, insulated galvalume roof sheeting, and 36 automated hydraulic dock levelers, it delivers superior operational productivity.",
+    ],
+    challenge:
+      "Erecting 45-meter wide clear-span steel portals during monsoon season without structural sag, alongside achieving strict FM2 floor flatness tolerance for high-reach automated forklifts.",
+    solution:
+      "Employed high-capacity mobile hydraulic cranes with calibrated laser alignment jigs and utilized laser-screed concrete pouring machines with dry-shake metallic floor hardeners.",
+    highlights: [
+      "45-Meter Column-Free Clear Span PEB Frames",
+      "FM2 Super-Flat Heavy Load Industrial Flooring",
+      "36 Automated Hydraulic Dock Levelers & Bays",
+      "High-Efficiency Solar Canopy & Rainwater Harvesting",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+    ],
+  },
+  {
+    id: 4,
+    title: "TechMatrix Hub Workspace Interior",
+    category: "Interior",
+    location: "Vibhuti Khand, Lucknow",
+    builtUpArea: "65,000 sq.ft.",
+    area: "65,000 Sq. Ft.",
+    duration: "6 Months",
+    status: "Completed",
+    progress: "100%",
+    client: "TechMatrix Solutions",
+    architect: "DSS Interior Studio",
+    contractType: "Turnkey Fit-Out",
+    year: "2024",
+    image:
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85",
+    desc: "Turnkey corporate fit-out for 800 workstations, acoustic executive boardrooms, biophilic green walls, and custom modular collaboration pods.",
+    overviewParagraphs: [
+      "Designed and executed as a flagship tech facility in Vibhuti Khand, Lucknow, TechMatrix Hub accommodates 800 IT professionals across collaborative modern zones.",
+      "The fit-out encompasses bespoke architectural acoustic paneling, demountable double-glazed partitions, biophilic moss feature walls, ergonomic modular furniture, and automated lighting control circuits.",
+    ],
+    challenge:
+      "Completing a fast-track 65,000 sq. ft. Grade-A turnkey corporate interior within an aggressive 60-day occupancy window while integrating complex HVAC and IT server room redundancies.",
+    solution:
+      "Implemented pre-fabricated modular joinery assembled off-site and operated round-the-clock 3-shift crews with dedicated MEP commissioning supervisors.",
+    highlights: [
+      "Fast-Track 60-Day Turnkey Handover",
+      "High STC Acoustic Noise Isolation Standards",
+      "Bespoke Millwork & Modular Collaboration Pods",
+      "Smart DALI Energy-Saving Sensor Lighting",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    ],
+  },
+  {
+    id: 5,
+    title: "Kanpur Expressway Interchange Bridge",
+    category: "Infrastructure",
+    location: "Kanpur Highway Node",
+    builtUpArea: "8.5 KM Span",
+    area: "8.5 KM Civil Span",
+    duration: "30 Months",
+    status: "Completed",
+    progress: "100%",
+    client: "State Infrastructure Board",
+    architect: "NHAI Consultants",
+    contractType: "Civil & Structural",
+    year: "2023",
+    image:
+      "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=1200&q=85",
+    desc: "Heavy civil infrastructure including RCC prestressed concrete flyover piers, stormwater drainage viaducts, and high-tensile asphalt carpeting.",
+    overviewParagraphs: [
+      "A vital infrastructure artery connecting industrial nodes to the expressway, this 8.5 km civil engineering project was executed to rigorous highway structural standards.",
+      "The scope featured prestressed concrete box girders, deep bored pile foundations, elastomeric expansion bearings, stormwater drainage viaducts, and heavy polymer-modified asphalt paving.",
+    ],
+    challenge:
+      "Erecting heavy prestressed concrete box girders across a live 6-lane national expressway corridor without halting commercial vehicular traffic.",
+    solution:
+      "Engineered an automated launching gantry system operating during designated low-traffic night windows, supported by digital strain gauge real-time load telemetry.",
+    highlights: [
+      "Prestressed Concrete Box Girders & Piers",
+      "Earthquake-Resistant Seismic Bridge Bearings",
+      "24/7 Supervised Precision Heavy Lifts",
+      "Completed 45 Days Ahead of Contract Schedule",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+    ],
+  },
+  {
+    id: 6,
+    title: "Regal Heights Luxury Apartments",
+    category: "Residential",
+    location: "Faizabad Road, Lucknow",
+    builtUpArea: "260,000 sq.ft.",
+    area: "260,000 Sq. Ft.",
+    duration: "22 Months",
+    status: "Completed",
+    progress: "100%",
+    client: "Regal Developers",
+    architect: "Urban Planners Group",
+    contractType: "Turnkey",
+    year: "2023",
+    image:
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=85",
+    desc: "Twin 14-story residential towers with rooftop clubhouse, earthquake-resistant RCC shear walls, and rainwater conservation reservoir.",
+    overviewParagraphs: [
+      "Regal Heights comprises twin 14-story residential towers delivering 120 premium family residences along Faizabad Road, Lucknow.",
+      "Designed to meet Zone-IV seismic safety standards, the structure features monolithic RCC shear walls, high-speed panoramic elevators, rooftop recreational sports facilities, and an advanced zero-liquid-discharge STP unit.",
+    ],
+    challenge:
+      "Constructing twin 14-story towers in a high-wind and seismic active zone with strict architectural demands for expansive cantilevered balconies and high-strength shear walls.",
+    solution:
+      "Applied M40 grade self-compacting concrete with aluminum formwork systems, enabling a 7-day floor cycle while ensuring flawless surface finishes and seismic damping.",
+    highlights: [
+      "Zone-IV Seismic Reinforced Concrete Design",
+      "High-Speed Smart Elevators & Sky Lounge",
+      "Zero-Water-Discharge Eco STP Plant",
+      "Comprehensive 5-Tier Security Network",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+    ],
+  },
+  {
+    id: 7,
+    title: "Steel Manufacturing Plant",
+    category: "Industrial",
+    location: "Kanpur, UP",
+    builtUpArea: "500000 sq.ft.",
+    area: "500,000 Sq. Ft.",
+    duration: "37 Months",
+    status: "Completed",
+    progress: "100%",
+    client: "Steel Industries Ltd",
+    architect: "Industrial Architects",
+    contractType: "Turnkey",
+    year: "2024",
+    image:
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85",
+    desc: "Heavy industrial manufacturing facility spanning 500,000 sq. ft. equipped with overhead crane gantries, sub-arc welded steel framing, and industrial air scrubbing towers.",
+    overviewParagraphs: [
+      "The Steel Manufacturing Plant in Kanpur stands as one of the largest turnkey industrial facilities executed by DSS Infrabuild. Spanning over 500,000 sq. ft., this mega facility was engineered from greenfield ground breaking to full operational commissioning.",
+      "The plant integrates high-capacity overhead crane gantries (up to 50 MT load), automated sub-arc welded high-tensile trusses, heavy FM2 concrete floor aprons, industrial ventilation stacks, and complete electrical substation infrastructure.",
+    ],
+    challenge:
+      "The site had challenging soil conditions requiring deep foundation work. Additionally, the client requested a tight 24-month schedule for a project of this scale, which typically takes 30+ months.",
+    solution:
+      "Implemented piled foundation system with soil stabilization. Used BIM technology for clash detection and 4D scheduling. Deployed 3 tower cranes and 200+ workers in shifts to accelerate construction. Completed 3 months ahead of schedule.",
+    highlights: [
+      "500,000 Sq. Ft. Greenfield Industrial Infrastructure",
+      "50-Metric Ton Overhead Crane Gantry Support",
+      "Automated High-Tensile PEB Steel Framing",
+      "Full Safety & Environmental Compliance Handover",
+    ],
+    gallery: [
+      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+    ],
+  },
+];
+
+export const projectCategories = [
+  "All",
+  "Commercial",
+  "Residential",
+  "Industrial",
+  "Interior",
+  "Infrastructure",
+];
