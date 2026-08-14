@@ -138,7 +138,6 @@ const OpenPositions = () => {
             {jobListings.map((job) => (
               <motion.div
                 key={job.id}
-                whileHover={{ y: -3 }}
                 onClick={() => {
                   setSelectedJob(job);
                   setFormData({ ...formData, position: job.title });
@@ -146,7 +145,7 @@ const OpenPositions = () => {
                 className={`p-6 rounded-2xl border transition-all duration-200 cursor-pointer ${
                   selectedJob?.id === job.id
                     ? "border-[#e05609] bg-orange-50/40 shadow-md ring-1 ring-[#e05609]"
-                    : "border-gray-200 bg-white hover:border-gray-300 hover:shadow-sm"
+                    : "border-gray-200 bg-white hover:border-[#e05609] hover:shadow-sm"
                 }`}
               >
                 <div className="flex flex-wrap items-start justify-between gap-2 mb-2">

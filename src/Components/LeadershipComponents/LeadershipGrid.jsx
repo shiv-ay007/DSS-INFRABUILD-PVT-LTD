@@ -92,8 +92,7 @@ const LeadershipGrid = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
-            whileHover={{ y: -6 }}
-            className="group bg-white rounded-2xl border border-gray-200/90 hover:border-[#e05609] shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between"
+            className="group bg-white rounded-2xl border border-gray-200/90 hover:border-[#e05609] shadow-sm transition-colors duration-200 overflow-hidden flex flex-col justify-between"
           >
             {/* Top Photo & Floating Dept Badge */}
             <div className="h-72 w-full relative overflow-hidden bg-[#f4f5f7] flex items-end justify-center">

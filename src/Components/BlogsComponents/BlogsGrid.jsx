@@ -85,10 +85,9 @@ const BlogsGrid = () => {
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.35 }}
-              whileHover={{ y: -6 }}
               key={blog.id}
               onClick={() => navigate(`/blogs/${blog.id}`)}
-              className="group bg-white rounded-2xl border border-gray-200/90 hover:border-orange-300 shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col justify-between cursor-pointer"
+              className="group bg-white rounded-2xl border border-gray-200/90 hover:border-[#e05609] shadow-sm transition-colors duration-200 overflow-hidden flex flex-col justify-between cursor-pointer"
             >
               {/* Blog Image */}
               <div className="h-52 w-full overflow-hidden relative bg-gray-100">

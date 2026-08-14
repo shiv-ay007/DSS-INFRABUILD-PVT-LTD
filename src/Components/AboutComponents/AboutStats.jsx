@@ -32,7 +32,6 @@ const AboutStats = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.4, delay: i * 0.08, ease: "easeOut" }}
-              whileHover={{ y: -4 }}
               className="group relative flex flex-col items-center justify-center text-center py-7 sm:py-9 px-3 sm:px-4 rounded-2xl bg-black/40 hover:bg-black/60 backdrop-blur-md border border-white/15 hover:border-[#e05609] shadow-xl transition-all duration-300"
             >
               {/* Stat Number */}

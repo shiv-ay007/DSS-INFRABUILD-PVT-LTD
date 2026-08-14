@@ -120,7 +120,7 @@ const ContactInfoCards = () => {
         <div className="flex items-center space-x-3">
           {/* LinkedIn */}
           <motion.a
-            whileHover={{ scale: 1.1, y: -2 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             href="https://www.linkedin.com"
             target="_blank"
@@ -133,7 +133,7 @@ const ContactInfoCards = () => {
 
           {/* Twitter / X */}
           <motion.a
-            whileHover={{ scale: 1.1, y: -2 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             href="https://twitter.com"
             target="_blank"
@@ -146,7 +146,7 @@ const ContactInfoCards = () => {
 
           {/* Instagram */}
           <motion.a
-            whileHover={{ scale: 1.1, y: -2 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             href="https://www.instagram.com"
             target="_blank"
@@ -159,7 +159,7 @@ const ContactInfoCards = () => {
 
           {/* YouTube */}
           <motion.a
-            whileHover={{ scale: 1.1, y: -2 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             href="https://www.youtube.com"
             target="_blank"
@@ -172,7 +172,7 @@ const ContactInfoCards = () => {
 
           {/* Facebook */}
           <motion.a
-            whileHover={{ scale: 1.1, y: -2 }}
+            whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             href="https://www.facebook.com"
             target="_blank"

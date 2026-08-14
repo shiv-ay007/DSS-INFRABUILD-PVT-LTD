@@ -51,8 +51,7 @@ const WhyJoinDSS = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
-              whileHover={{ y: -5 }}
-              className="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm hover:border-orange-300 transition-colors"
+              className="bg-white p-6 rounded-xl border border-gray-200/80 shadow-sm hover:border-[#e05609] transition-colors"
             >
               <span className="text-3xl mb-4 block">{p.icon}</span>
               <h3 className="text-lg font-bold text-gray-900 mb-2">{p.title}</h3>
