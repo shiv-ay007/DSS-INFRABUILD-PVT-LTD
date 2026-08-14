@@ -75,8 +75,7 @@ const CoreValues = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
-              whileHover={{ y: -5 }}
-              className="bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-[#e05609] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group"
+              className="bg-white rounded-2xl overflow-hidden border border-gray-200/80 hover:border-[#e05609] shadow-sm transition-colors duration-200 flex flex-col justify-between group"
             >
               {/* Card Image */}
               <div className="h-44 w-full relative overflow-hidden bg-gray-100">

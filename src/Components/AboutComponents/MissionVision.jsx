@@ -27,7 +27,6 @@ const MissionVision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            whileHover={{ y: -5 }}
             className="bg-[#1c1c1f] p-6 sm:p-8 rounded-2xl border border-neutral-800 hover:border-[#e05609] transition-colors duration-200"
           >
             <div className="w-12 h-12 rounded-xl bg-[#e05609]/20 text-[#e05609] flex items-center justify-center mb-5">
@@ -48,7 +47,6 @@ const MissionVision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-            whileHover={{ y: -5 }}
             className="bg-[#1c1c1f] p-6 sm:p-8 rounded-2xl border border-neutral-800 hover:border-[#e05609] transition-colors duration-200"
           >
             <div className="w-12 h-12 rounded-xl bg-[#e05609]/20 text-[#e05609] flex items-center justify-center mb-5">
@@ -70,7 +68,6 @@ const MissionVision = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-            whileHover={{ y: -5 }}
             className="bg-[#1c1c1f] p-6 sm:p-8 rounded-2xl border border-neutral-800 hover:border-[#e05609] transition-colors duration-200"
           >
             <div className="w-12 h-12 rounded-xl bg-[#e05609]/20 text-[#e05609] flex items-center justify-center mb-5">
