@@ -129,7 +129,7 @@ const ServiceQuoteModal = ({
           exit={{ opacity: 0, scale: 0.92, y: 15 }}
           transition={{ duration: 0.25, ease: "easeOut" }}
           onClick={(e) => e.stopPropagation()}
-          className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 sm:p-8 overflow-hidden my-6"
+          className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-gray-100 p-6 sm:p-7 overflow-hidden my-auto max-h-[95vh] overflow-y-auto"
         >
           {/* Close Button */}
           <button
@@ -145,7 +145,7 @@ const ServiceQuoteModal = ({
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              className="py-10 text-center space-y-4"
+              className="py-10 text-center space-y-3.5"
             >
               <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto text-3xl">
                 <FiCheckCircle />
@@ -163,7 +163,7 @@ const ServiceQuoteModal = ({
             <>
               {/* Modal Header */}
               <div className="text-left space-y-1.5 pr-6">
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-950 tracking-tight">
+                <h2 className="text-2xl sm:text-[26px] font-extrabold text-gray-950 tracking-tight leading-snug">
                   Ready to Build Your{" "}
                   <span className="text-[#e05609]">Dream Project?</span>
                 </h2>
@@ -181,9 +181,9 @@ const ServiceQuoteModal = ({
               </div>
 
               {/* Modal Form */}
-              <form onSubmit={handleSubmit} className="mt-5 space-y-3.5 text-left">
+              <form onSubmit={handleSubmit} className="mt-4 sm:mt-5 space-y-3 text-left">
                 {/* Full Name & Email Address */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
                     <label className="block text-xs font-semibold text-gray-700 mb-1">
                       Full Name *
@@ -280,13 +280,13 @@ const ServiceQuoteModal = ({
                     Your Message *
                   </label>
                   <textarea
-                    rows="3"
+                    rows="2"
                     required
                     value={formData.message}
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#e05609]/30 focus:border-[#e05609] transition-all resize-none"
+                    className="w-full px-3.5 py-2 rounded-lg border border-gray-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-[#e05609]/30 focus:border-[#e05609] transition-all resize-none"
                   />
                 </div>
 
@@ -296,7 +296,7 @@ const ServiceQuoteModal = ({
                   whileTap={{ scale: 0.99 }}
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-[#e05609] hover:bg-[#c94905] active:bg-[#b53f03] text-white font-bold py-3 px-6 rounded-lg text-sm sm:text-base flex items-center justify-center space-x-2 shadow-md hover:shadow-orange-500/20 transition-all cursor-pointer disabled:opacity-75"
+                  className="w-full bg-[#e05609] hover:bg-[#c94905] active:bg-[#b53f03] text-white font-bold py-2.5 sm:py-3 px-6 rounded-lg text-sm sm:text-base flex items-center justify-center space-x-2 shadow-md hover:shadow-orange-500/20 transition-all cursor-pointer disabled:opacity-75"
                 >
                   <FiSend className="text-base" />
                   <span>
@@ -305,7 +305,7 @@ const ServiceQuoteModal = ({
                 </motion.button>
 
                 {/* Footer Security Note & Checkbox */}
-                <div className="pt-2 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-2">
+                <div className="pt-1.5 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-2">
                   <div className="flex items-center space-x-1.5">
                     <FiLock className="text-gray-400 text-xs" />
                     <span>Your information is secure & confidential</span>

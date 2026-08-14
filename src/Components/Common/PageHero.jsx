@@ -10,7 +10,7 @@ const PageHero = ({
   bgImage = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80",
 }) => {
   return (
-    <section className="relative min-h-[320px] sm:min-h-[360px] lg:min-h-[400px] flex items-center justify-center text-center pt-24 sm:pt-28 pb-12 sm:pb-16 px-4 overflow-hidden bg-[#141416]">
+    <section className="relative min-h-[290px] sm:min-h-[330px] lg:min-h-[370px] flex items-center justify-center text-center pt-28 sm:pt-32 lg:pt-36 pb-12 sm:pb-14 lg:pb-16 px-4 overflow-hidden bg-[#141416]">
       {/* Background Image with Framer Motion Zoom effect */}
       <motion.div
         initial={{ scale: 1.15, opacity: 0 }}
@@ -27,13 +27,13 @@ const PageHero = ({
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-[#e05609]/20 rounded-full blur-3xl pointer-events-none" />
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center my-auto">
         {/* Breadcrumb Row */}
         <motion.nav
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="inline-flex items-center space-x-2 text-xs sm:text-sm text-gray-300 mb-4 bg-black/40 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/10 shadow-sm"
+          className="inline-flex items-center space-x-2 text-xs sm:text-sm text-gray-300 mb-4 sm:mb-5 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10 shadow-sm"
         >
           <Link
             to="/"

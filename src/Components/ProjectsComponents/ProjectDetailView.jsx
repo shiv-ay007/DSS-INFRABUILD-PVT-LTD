@@ -146,9 +146,9 @@ const ProjectDetailView = () => {
   return (
     <div className="bg-white min-h-screen overflow-hidden">
       {/* ========================================================= */}
-      {/* 1. PROJECT HERO SECTION (EXACT REFERENCE MATCH)           */}
+      {/* 1. PROJECT HERO SECTION                                   */}
       {/* ========================================================= */}
-      <section className="relative min-h-[380px] sm:min-h-[420px] flex items-center justify-center text-center pt-24 sm:pt-28 pb-14 sm:pb-16 px-4 overflow-hidden bg-black">
+      <section className="relative min-h-[340px] sm:min-h-[380px] lg:min-h-[420px] flex items-center justify-center text-center pt-28 sm:pt-32 lg:pt-36 pb-12 sm:pb-14 lg:pb-16 px-4 overflow-hidden bg-black">
         {/* Background Image with Dark Overlay */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -157,22 +157,28 @@ const ProjectDetailView = () => {
         <div className="absolute inset-0 bg-black/65 backdrop-blur-[1px]" />
 
         {/* Content Container */}
-        <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center space-y-4">
-          {/* Breadcrumbs: Home > Projects > Project Name */}
-          <div className="flex items-center justify-center space-x-2 text-xs sm:text-sm text-gray-300 font-medium">
-            <Link to="/" className="hover:text-white transition-colors">
-              Home
+        <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center space-y-4 my-auto">
+          {/* Breadcrumbs Pill Badge */}
+          <nav className="inline-flex items-center space-x-2 text-xs sm:text-sm text-gray-300 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10 shadow-sm mb-1">
+            <Link
+              to="/"
+              className="hover:text-[#e05609] transition-colors flex items-center space-x-1.5"
+            >
+              <svg className="w-3.5 h-3.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+              </svg>
+              <span>Home</span>
             </Link>
-            <span className="text-gray-400">&gt;</span>
-            <Link to="/projects" className="hover:text-white transition-colors">
+            <span className="text-gray-500">/</span>
+            <Link to="/projects" className="hover:text-[#e05609] transition-colors">
               Projects
             </Link>
-            <span className="text-gray-400">&gt;</span>
+            <span className="text-gray-500">/</span>
             <span className="text-[#e05609] font-medium">{project.title}</span>
-          </div>
+          </nav>
 
           {/* Project Main Title */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight drop-shadow-md font-sans">
             {project.title}
           </h1>
 
@@ -183,7 +189,7 @@ const ProjectDetailView = () => {
           </div>
 
           {/* 4 Stat Metric Badges Row (Evenly Spaced Matching Reference) */}
-          <div className="pt-6 w-full max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-6 sm:gap-12 md:gap-16">
+          <div className="pt-3 sm:pt-4 w-full max-w-4xl mx-auto flex flex-wrap items-center justify-center gap-6 sm:gap-12 md:gap-16">
             {/* Stat 1: Built-Up Area */}
             <div className="text-center min-w-[120px]">
               <span className="block text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[#e05609] tracking-tight">

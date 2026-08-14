@@ -34,7 +34,7 @@ const BlogDetailView = () => {
       {/* ========================================================= */}
       {/* 1. BLOG HERO SECTION                                      */}
       {/* ========================================================= */}
-      <section className="relative min-h-[380px] sm:min-h-[420px] flex items-center justify-center text-center pt-24 sm:pt-28 pb-14 sm:pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-black">
+      <section className="relative min-h-[300px] sm:min-h-[340px] lg:min-h-[380px] flex items-center justify-center text-center pt-28 sm:pt-32 lg:pt-36 pb-12 sm:pb-14 lg:pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden bg-black">
         {/* Background Image with Dark Overlay */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -43,24 +43,30 @@ const BlogDetailView = () => {
         <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]" />
 
         {/* Content Container (Matches max-w-[1440px]) */}
-        <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center space-y-4">
-          {/* Breadcrumbs: Home > Blogs > Blog Title */}
-          <div className="flex items-center justify-center space-x-2 text-xs sm:text-sm text-gray-300 font-medium flex-wrap">
-            <Link to="/" className="hover:text-white transition-colors">
-              Home
+        <div className="relative z-10 max-w-5xl mx-auto flex flex-col items-center space-y-4 my-auto">
+          {/* Breadcrumbs Pill Badge */}
+          <nav className="inline-flex items-center space-x-2 text-xs sm:text-sm text-gray-300 bg-black/50 backdrop-blur-md px-4 py-1.5 rounded-full border border-white/10 shadow-sm flex-wrap mb-1">
+            <Link
+              to="/"
+              className="hover:text-[#e05609] transition-colors flex items-center space-x-1.5"
+            >
+              <svg className="w-3.5 h-3.5 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+              </svg>
+              <span>Home</span>
             </Link>
-            <span className="text-gray-400">&gt;</span>
-            <Link to="/blogs" className="hover:text-white transition-colors">
+            <span className="text-gray-500">/</span>
+            <Link to="/blogs" className="hover:text-[#e05609] transition-colors">
               Blogs
             </Link>
-            <span className="text-gray-400">&gt;</span>
+            <span className="text-gray-500">/</span>
             <span className="text-[#e05609] font-medium line-clamp-1 max-w-md">
               {blog.title}
             </span>
-          </div>
+          </nav>
 
           {/* Main Blog Title */}
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight drop-shadow-md">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight drop-shadow-md font-sans">
             {blog.title}
           </h1>
 

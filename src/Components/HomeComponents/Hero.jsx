@@ -141,14 +141,12 @@ const Hero = () => {
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay with Smooth Backdrop Blur */}
+        {/* Rich Black Tint & Contrast Overlay */}
         <div
           className="absolute inset-0 pointer-events-none z-[1]"
           style={{
             background:
-              "linear-gradient(135deg, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.70) 50%, rgba(0, 0, 0, 0.50) 100%)",
-            backdropFilter: "blur(2.5px)",
-            WebkitBackdropFilter: "blur(2.5px)",
+              "linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.65) 50%, rgba(0, 0, 0, 0.82) 100%)",
           }}
         />
 
@@ -160,7 +158,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="inline-flex items-center space-x-2 px-4 sm:px-5 py-1.5 rounded-full border border-[#e05609]/40 bg-black/50 backdrop-blur-sm text-[#e05609] text-[11px] sm:text-[12px] font-semibold tracking-widest uppercase mb-5 sm:mb-6 shadow-sm"
+            className="inline-flex items-center space-x-2 px-4 sm:px-5 py-1.5 rounded-full border border-[#e05609]/50 bg-black/70 text-[#e05609] text-[11px] sm:text-[12px] font-semibold tracking-widest uppercase mb-5 sm:mb-6 shadow-md"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-[#e05609] animate-pulse"></span>
             <span>EST. 2014 — 12+ YEARS OF ENGINEERING EXCELLENCE</span>
@@ -171,7 +169,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
-            className="text-3xl sm:text-5xl md:text-6xl lg:text-[72px] xl:text-[80px] font-bold tracking-tight text-white leading-[1.12] mb-5 drop-shadow-md font-sans"
+            className="text-3xl sm:text-5xl md:text-6xl lg:text-[72px] xl:text-[80px] font-bold tracking-tight text-white leading-[1.12] mb-5 drop-shadow-[0_4px_20px_rgba(0,0,0,0.95)] font-sans"
           >
             Shaping the <span className="text-[#e05609] font-bold">Future</span>
             <br className="hidden sm:inline" /> with Innovation.
@@ -182,7 +180,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-            className="max-w-3xl text-sm sm:text-base md:text-lg text-gray-200/95 font-normal leading-relaxed mb-7 sm:mb-8 text-center drop-shadow-md"
+            className="max-w-3xl text-sm sm:text-base md:text-lg text-gray-100 font-normal leading-relaxed mb-7 sm:mb-8 text-center drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]"
           >
             End-to-end construction, design, and project management across residential,
             commercial, and industrial sectors. DSS Infrabuild — where engineering meets
