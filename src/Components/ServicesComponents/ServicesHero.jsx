@@ -8,7 +8,7 @@ const ServicesHero = () => {
       highlightWord="We Do"
       subtitle="Comprehensive construction solutions tailored to your needs"
       breadcrumbs={[{ name: "Services" }]}
-      bgImage="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?w=1920&auto=format&fit=crop&q=85"
+      bgImage="/assets/projects_media/project_media_50.jpg"
     />
   );
 };

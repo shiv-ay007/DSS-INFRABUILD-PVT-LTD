@@ -8,7 +8,7 @@ const BoardPhilosophy = () => {
       {/* Background Image Layer - Deep Architectural Backdrop */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?w=1920&q=80"
+          src="/assets/projects_media/project_media_47.jpg"
           alt="Engineering & Construction Backdrop"
           className="w-full h-full object-cover object-center scale-105"
         />

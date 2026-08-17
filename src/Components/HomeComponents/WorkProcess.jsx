@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 // --- Step Images for Dynamic Transition when Hovering / Selecting Steps ---
 const stepImages = {
-  1: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1200&auto=format&fit=crop",
-  2: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop",
-  3: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1200&auto=format&fit=crop",
-  4: "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop",
-  5: "https://images.unsplash.com/photo-1541888946425-d0fbb186156f?q=80&w=1200&auto=format&fit=crop",
-  6: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop",
-  7: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1200&auto=format&fit=crop",
+  1: "/assets/projects_media/project_media_41.jpg",
+  2: "/assets/projects_media/project_media_42.jpg",
+  3: "/assets/projects_media/project_media_43.jpg",
+  4: "/assets/projects_media/project_media_44.jpg",
+  5: "/assets/projects_media/project_media_20.jpg",
+  6: "/assets/projects_media/project_media_45.jpg",
+  7: "/assets/projects_media/project_media_46.jpg",
 };
 
 // 7 Step Journey Data (Exact match to reference)
@@ -102,7 +102,7 @@ const WorkProcess = () => {
           {/* ========================================================================= */}
           {/* LEFT COLUMN: BALANCED HEADER & CURVED MASK IMAGE (STICKY ON DESKTOP)      */}
           {/* ========================================================================= */}
-          <div className="lg:col-span-6 lg:sticky lg:top-24 space-y-5 sm:space-y-6">
+          <div className="lg:col-span-6 lg:sticky lg:top-24 space-y-4 sm:space-y-5">
             
             {/* Top Tag & Main Headline */}
             <div className="space-y-2.5 sm:space-y-3">
@@ -113,19 +113,17 @@ const WorkProcess = () => {
                 </span>
               </div>
               
-              <h2 className="text-[1.3rem] sm:text-[2.2rem] font-black text-gray-950 tracking-tight leading-[1.15] uppercase">
-                STRATEGIC <span className="text-[#e05609]">STEPS</span> <br />
-                TO <span className="text-[#e05609]">IMPACTFUL</span> <br />
-                RESULTS
+              <h2 className="text-[1.3rem] sm:text-[1.8rem] lg:text-[2.1rem] font-black text-gray-950 tracking-tight leading-tight uppercase">
+                STRATEGIC <span className="text-[#e05609]">STEPS</span> TO <span className="text-[#e05609]">IMPACTFUL</span> RESULTS
               </h2>
 
-              <p className="text-gray-500 text-xs sm:text-sm font-normal max-w-md leading-relaxed">
+              <p className="text-gray-500 text-xs sm:text-sm font-normal max-w-lg leading-relaxed">
                 A structured, disciplined methodology ensuring complete transparency, architectural integrity, and on-time project completion.
               </p>
             </div>
 
             {/* Signature Curved Image Container perfectly proportional to Right Column */}
-            <div className="relative w-full max-w-[500px] group">
+            <div className="relative w-full max-w-[480px] lg:max-w-[490px] group">
               
               {/* Subtle Ambient Glow */}
               <div 
@@ -135,7 +133,7 @@ const WorkProcess = () => {
 
               {/* The Curved Image Card */}
               <div
-                className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-[440px] overflow-hidden bg-gray-200 shadow-xl transition-transform duration-500 group-hover:scale-[1.01]"
+                className="relative w-full h-[260px] sm:h-[300px] md:h-[330px] lg:h-[355px] xl:h-[365px] overflow-hidden bg-gray-200 shadow-xl transition-transform duration-500 group-hover:scale-[1.01]"
                 style={{
                   clipPath: "url(#process-curve-mask)",
                   WebkitClipPath: "url(#process-curve-mask)",
@@ -148,7 +146,7 @@ const WorkProcess = () => {
                   className="w-full h-full object-cover object-center transition-all duration-700 ease-out filter brightness-[0.98] contrast-[1.02]"
                   onError={(e) => {
                     e.currentTarget.src =
-                      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop";
+                      "/assets/projects_media/project_media_42.jpg";
                   }}
                 />
 

@@ -99,7 +99,7 @@ const BlogsGrid = () => {
                   onError={(e) => {
                     e.currentTarget.src =
                       blog.fallback ||
-                      "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80";
+                      "/assets/projects_media/project_media_16.jpg";
                   }}
                 />
                 <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-xs text-white text-xs font-bold px-2.5 py-1 rounded-md">

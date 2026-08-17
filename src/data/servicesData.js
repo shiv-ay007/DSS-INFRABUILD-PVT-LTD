@@ -16,9 +16,9 @@ export const servicesData = [
       "At DSS Infrabuild, we understand that every project is unique. Our team works closely with clients to understand requirements and deliver solutions that exceed expectations. With 18+ years of experience, we bring expertise and reliability to every project.",
     ],
     image:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_70.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_71.jpg",
     subServices: [
       {
         id: "concept-drawing",
@@ -26,7 +26,7 @@ export const servicesData = [
         desc: "Initial concept sketches and design ideation",
         icon: "pencil",
         image:
-          "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_72.jpg",
       },
       {
         id: "approval-drawing",
@@ -34,7 +34,7 @@ export const servicesData = [
         desc: "Municipal approval and building permit drawings",
         icon: "check",
         image:
-          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_49.jpg",
       },
       {
         id: "structure-drawing",
@@ -42,7 +42,7 @@ export const servicesData = [
         desc: "Detailed structural engineering drawings",
         icon: "structure",
         image:
-          "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_73.jpg",
       },
       {
         id: "working-drawing",
@@ -50,7 +50,7 @@ export const servicesData = [
         desc: "Construction and execution drawings",
         icon: "ruler",
         image:
-          "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_74.jpg",
       },
       {
         id: "electrical-drawing",
@@ -58,7 +58,7 @@ export const servicesData = [
         desc: "Complete electrical layout and planning",
         icon: "electrical",
         image:
-          "https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_75.jpg",
       },
       {
         id: "plumbing-drawing",
@@ -66,7 +66,7 @@ export const servicesData = [
         desc: "Water supply and drainage system plans",
         icon: "plumbing",
         image:
-          "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_76.jpg",
       },
       {
         id: "landscape-drawing",
@@ -74,7 +74,7 @@ export const servicesData = [
         desc: "Landscape and exterior design planning",
         icon: "landscape",
         image:
-          "https://images.unsplash.com/photo-1558904541-efa8c4a08931?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_77.jpg",
       },
       {
         id: "submission-drawing",
@@ -82,7 +82,7 @@ export const servicesData = [
         desc: "Documentation for regulatory submission",
         icon: "submission",
         image:
-          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_78.jpg",
       },
       {
         id: "exterior-drawing",
@@ -90,7 +90,7 @@ export const servicesData = [
         desc: "Exterior elevation and facade design",
         icon: "exterior",
         image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_79.jpg",
       },
       {
         id: "exterior-3d-view",
@@ -98,7 +98,7 @@ export const servicesData = [
         desc: "3D visualization of exterior design",
         icon: "elevation",
         image:
-          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_80.jpg",
       },
     ],
   },
@@ -120,9 +120,9 @@ export const servicesData = [
       "At DSS Infrabuild, we understand that every project is unique. Our team works closely with clients to understand requirements and deliver solutions that exceed expectations. With 18+ years of experience, we bring expertise and reliability to every project.",
     ],
     image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_48.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_15.jpg",
     subServices: [
       {
         id: "residential-construction",
@@ -130,7 +130,7 @@ export const servicesData = [
         desc: "Homes, villas, and apartment complexes",
         icon: "home",
         image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_79.jpg",
       },
       {
         id: "commercial-construction",
@@ -138,7 +138,7 @@ export const servicesData = [
         desc: "Offices, malls, and retail spaces",
         icon: "building",
         image:
-          "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_81.jpg",
       },
       {
         id: "industrial-construction",
@@ -146,7 +146,7 @@ export const servicesData = [
         desc: "Factories, warehouses, and industrial facilities",
         icon: "industry",
         image:
-          "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_82.jpg",
       },
       {
         id: "turnkey-projects",
@@ -154,7 +154,7 @@ export const servicesData = [
         desc: "Complete end-to-end project delivery",
         icon: "clipboard",
         image:
-          "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_73.jpg",
       },
       {
         id: "renovation-remodeling",
@@ -162,7 +162,7 @@ export const servicesData = [
         desc: "Upgrade and modernize existing structures",
         icon: "hammer",
         image:
-          "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_83.jpg",
       },
       {
         id: "structural-construction",
@@ -170,7 +170,7 @@ export const servicesData = [
         desc: "RCC framing, foundations, and structural work",
         icon: "structure",
         image:
-          "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_84.jpg",
       },
       {
         id: "project-management",
@@ -178,7 +178,7 @@ export const servicesData = [
         desc: "Comprehensive project planning and execution",
         icon: "tasks",
         image:
-          "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_74.jpg",
       },
       {
         id: "civil-engineering",
@@ -186,7 +186,7 @@ export const servicesData = [
         desc: "Civil engineering design and execution",
         icon: "drafting",
         image:
-          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_49.jpg",
       },
     ],
   },
@@ -207,9 +207,9 @@ export const servicesData = [
       "At DSS Infrabuild, we understand that every project is unique. Our team works closely with clients to understand requirements and deliver solutions that exceed expectations. With 18+ years of experience, we bring expertise and reliability to every project.",
     ],
     image:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_85.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_64.jpg",
     subServices: [
       {
         id: "layout-plan",
@@ -217,7 +217,7 @@ export const servicesData = [
         desc: "Space planning and layout optimization",
         icon: "border",
         image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_79.jpg",
       },
       {
         id: "3d-view",
@@ -225,7 +225,7 @@ export const servicesData = [
         desc: "3D visualization and walkthroughs",
         icon: "elevation",
         image:
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_86.jpg",
       },
     ],
   },
@@ -247,9 +247,9 @@ export const servicesData = [
       "At DSS Infrabuild, we understand that every project is unique. Our team works closely with clients to understand requirements and deliver solutions that exceed expectations. With 18+ years of experience, we bring expertise and reliability to every project.",
     ],
     image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_69.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_60.jpg",
     subServices: [
       {
         id: "structural-steel-fabrication",
@@ -257,7 +257,7 @@ export const servicesData = [
         desc: "Steel structures and frameworks",
         icon: "structure",
         image:
-          "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_87.jpg",
       },
       {
         id: "metal-welding",
@@ -265,7 +265,7 @@ export const servicesData = [
         desc: "MIG, TIG, and arc welding services",
         icon: "fire",
         image:
-          "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_74.jpg",
       },
       {
         id: "cladding-paneling",
@@ -273,7 +273,7 @@ export const servicesData = [
         desc: "Exterior cladding and paneling",
         icon: "layer",
         image:
-          "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_83.jpg",
       },
       {
         id: "railings-handrails",
@@ -281,7 +281,7 @@ export const servicesData = [
         desc: "Custom railings and safety barriers",
         icon: "bars",
         image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_79.jpg",
       },
       {
         id: "custom-metalwork",
@@ -289,7 +289,7 @@ export const servicesData = [
         desc: "Bespoke metal products and solutions",
         icon: "cogs",
         image:
-          "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_82.jpg",
       },
     ],
   },
@@ -310,9 +310,9 @@ export const servicesData = [
       "At DSS Infrabuild, we understand that every project is unique. Our team works closely with clients to understand requirements and deliver solutions that exceed expectations. With 18+ years of experience, we bring expertise and reliability to every project.",
     ],
     image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_71.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_70.jpg",
     subServices: [
       {
         id: "construction-consultancy",
@@ -320,7 +320,7 @@ export const servicesData = [
         desc: "Project management and construction supervision",
         icon: "hardhat",
         image:
-          "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_73.jpg",
       },
       {
         id: "interior-consultancy",
@@ -328,7 +328,7 @@ export const servicesData = [
         desc: "Design guidance and space optimization",
         icon: "interior",
         image:
-          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_86.jpg",
       },
       {
         id: "fabrication-consultancy",
@@ -336,7 +336,7 @@ export const servicesData = [
         desc: "Metalwork and fabrication advisory",
         icon: "industry",
         image:
-          "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_87.jpg",
       },
       {
         id: "architectural-consultancy",
@@ -344,7 +344,7 @@ export const servicesData = [
         desc: "Design review and architectural guidance",
         icon: "drafting",
         image:
-          "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80",
+          "/assets/projects_media/project_media_49.jpg",
       },
     ],
   },

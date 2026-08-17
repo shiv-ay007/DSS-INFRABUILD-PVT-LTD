@@ -7,7 +7,7 @@ const PageHero = ({
   highlightWord = "",
   subtitle = "",
   breadcrumbs = [],
-  bgImage = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80",
+  bgImage = "/assets/projects_media/project_media_18.jpg",
 }) => {
   return (
     <section className="relative min-h-[290px] sm:min-h-[330px] lg:min-h-[370px] flex items-center justify-center text-center pt-28 sm:pt-32 lg:pt-36 pb-12 sm:pb-14 lg:pb-16 px-4 overflow-hidden bg-[#141416]">

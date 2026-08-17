@@ -204,7 +204,7 @@ const ServiceDetailView = () => {
                         loading="lazy"
                         onError={(e) => {
                           e.currentTarget.src =
-                            "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80";
+                            "/assets/projects_media/project_media_49.jpg";
                         }}
                         className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-500 ease-out"
                       />

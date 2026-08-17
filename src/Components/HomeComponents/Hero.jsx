@@ -130,7 +130,7 @@ const Hero = () => {
           loop
           muted
           playsInline
-          poster="https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1920&q=85"
+          poster="/assets/projects_media/project_media_30.jpg"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source

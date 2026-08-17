@@ -47,7 +47,7 @@ const OurJourney = () => {
             {/* Main Large Image */}
             <div className="col-span-8 h-[280px] sm:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden shadow-md border border-gray-100 bg-gray-100 group">
               <img
-                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=85"
+                src="/assets/projects_media/project_media_12.jpg"
                 alt="Rebar Construction Work"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -56,10 +56,10 @@ const OurJourney = () => {
             {/* Secondary Small Image (Right) */}
             <div className="col-span-4 h-[180px] sm:h-[220px] lg:h-[240px] rounded-2xl overflow-hidden shadow-sm border border-gray-100 bg-gray-100 group">
               <img
-                src="https://images.unsplash.com/photo-1541888946425-d0fbb186156f?w=600&q=85"
+                src="/assets/projects_media/project_media_13.jpg"
                 alt="Engineers on Site Deck"
                 onError={(e) => {
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&q=80";
+                  e.currentTarget.src = "/assets/projects_media/project_media_14.jpg";
                 }}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />

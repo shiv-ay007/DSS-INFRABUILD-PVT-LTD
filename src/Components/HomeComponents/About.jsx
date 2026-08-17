@@ -56,49 +56,44 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="lg:col-span-6 xl:col-span-6 space-y-6 sm:space-y-7"
+            className="lg:col-span-6 xl:col-span-6 space-y-5 sm:space-y-6"
           >
             
-            {/* Top Section Tag */}
-            <div className="flex items-center space-x-3">
-              <span className="w-8 h-[2.5px] bg-[#e05609] rounded-full"></span>
-              <span className="text-[#e05609] font-extrabold text-xs sm:text-sm tracking-widest uppercase">
-                OUR STORY
-              </span>
+            {/* Top Section Tag & Main Headline */}
+            <div className="space-y-2.5 sm:space-y-3">
+              <div className="flex items-center space-x-2.5">
+                <span className="w-6 h-[2px] bg-[#e05609] rounded-full"></span>
+                <span className="text-[#e05609] font-extrabold text-xs sm:text-sm tracking-widest uppercase">
+                  OUR STORY
+                </span>
+              </div>
+
+              {/* Main Section Headline */}
+              <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-gray-950 tracking-tight leading-tight">
+                Building <span className="text-[#e05609]">Dreams</span> Since{" "}
+                <span className="text-[#e05609]">2014</span>
+              </h2>
             </div>
 
-            {/* Main Section Headline */}
-            <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-gray-950 tracking-tight leading-tight">
-              Building{" "}
-              <span className="text-[#e05609] relative inline-block">
-                Dreams
-                <span className="absolute left-0 -bottom-1 w-full h-[4px] bg-orange-200 rounded-full"></span>
-              </span>{" "}
-              Since{" "}
-              <span className="text-[#e05609] relative inline-block">
-                2014
-                <span className="absolute left-0 -bottom-1 w-full h-[4px] bg-orange-200 rounded-full"></span>
-              </span>
-            </h2>
+            {/* Story Paragraphs */}
+            <div className="space-y-3 sm:space-y-3.5">
+              <p className="text-gray-600 text-sm sm:text-[15.5px] leading-relaxed font-normal">
+                Founded with a vision to revolutionize the construction industry, DSS Infrabuild has
+                grown from a small team of passionate engineers to one of India's most trusted
+                construction companies.
+              </p>
 
-            {/* Paragraph 1 */}
-            <p className="text-gray-600 text-base sm:text-[17px] leading-relaxed">
-              Founded with a vision to revolutionize the construction industry, DSS Infrabuild has
-              grown from a small team of passionate engineers to one of India's most trusted
-              construction companies.
-            </p>
-
-            {/* Paragraph 2 with Highlighted Orange Text */}
-            <p className="text-gray-600 text-base sm:text-[17px] leading-relaxed">
-              Over the past <strong className="text-[#e05609] font-bold">12 years</strong>, our
-              journey is marked by{" "}
-              <strong className="text-[#e05609] font-bold">1.2 million+ square feet</strong> of
-              built space,{" "}
-              <strong className="text-[#e05609] font-bold">200+ successful projects</strong>, and{" "}
-              <strong className="text-[#e05609] font-bold">100+ happy clients</strong> across 9
-              cities. Every milestone reflects our commitment to quality, innovation, and client
-              satisfaction.
-            </p>
+              <p className="text-gray-600 text-sm sm:text-[15.5px] leading-relaxed font-normal">
+                Over the past <strong className="text-[#e05609] font-semibold">12 years</strong>, our
+                journey is marked by{" "}
+                <strong className="text-[#e05609] font-semibold">1.2 million+ square feet</strong> of
+                built space,{" "}
+                <strong className="text-[#e05609] font-semibold">200+ successful projects</strong>, and{" "}
+                <strong className="text-[#e05609] font-semibold">100+ happy clients</strong> across 9
+                cities. Every milestone reflects our commitment to quality, innovation, and client
+                satisfaction.
+              </p>
+            </div>
 
             {/* --- 3 Metric Stat Cards (Matching infra.dssup.in hover behavior: no fade, no lift, pure color change) --- */}
             <div className="grid grid-cols-3 gap-3 sm:gap-4 pt-2">
@@ -161,7 +156,7 @@ const About = () => {
                 className="w-full h-[300px] sm:h-[380px] lg:h-[420px] xl:h-[440px] object-cover block transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
                   e.currentTarget.src =
-                    "https://images.unsplash.com/photo-1541888946425-d0fbb186156f?q=80&w=1200&auto=format&fit=crop";
+                    "/assets/projects_media/project_media_20.jpg";
                 }}
               />
 

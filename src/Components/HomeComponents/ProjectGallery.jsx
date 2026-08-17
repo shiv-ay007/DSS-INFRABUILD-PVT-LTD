@@ -1,61 +1,96 @@
 import React, { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-// --- 6 HD Gallery Images matching the construction & architecture theme ---
+// --- Authentic Project Image Imports from src/assets ---
+import etawaConst1 from "../../assets/Etawa House/Construction/WhatsApp Image 2026-07-20 at 1.44.45 PM.jpeg";
+import etawaInt1 from "../../assets/Etawa House/Interior/WhatsApp Image 2026-07-20 at 1.44.46 PM (2).jpeg";
+import etawaInt2 from "../../assets/Etawa House/Interior/WhatsApp Image 2026-07-20 at 1.44.47 PM (1).jpeg";
+
+import anshalInt1 from "../../assets/Project Anshal/Interior/WhatsApp Image 2026-07-20 at 1.44.36 PM.jpeg";
+import anshalInt4 from "../../assets/Project Anshal/Interior/WhatsApp Image 2026-07-20 at 1.44.39 PM.jpeg";
+import anshalInt5 from "../../assets/Project Anshal/Interior/WhatsApp Image 2026-07-20 at 1.44.40 PM.jpeg";
+
+import p3Const1 from "../../assets/Project 3/Construction/WhatsApp Image 2026-07-20 at 1.42.30 PM (1).jpeg";
+import p3Int1 from "../../assets/Project 3/Interior/124.jpeg";
+
+import p4Const1 from "../../assets/Project 4/Construction/WhatsApp Image 2026-07-20 at 1.44.48 PM.jpeg";
+import p4Const2 from "../../assets/Project 4/Construction/WhatsApp Image 2026-07-20 at 1.44.49 PM (1).jpeg";
+
+import p5Const1 from "../../assets/Project 5/Construction/WhatsApp Image 2026-07-20 at 1.45.16 PM.jpeg";
+import p5Int1 from "../../assets/Project 5/Interior/WhatsApp Image 2026-07-20 at 9.19.27 AM (2).jpeg";
+
 const galleryItems = [
   {
     id: 1,
-    title: "Modern Commercial Office Interior",
-    category: "Interior Design",
-    image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85",
-    fallback:
-      "https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1400&q=85",
+    title: "Etawa House — Column & RCC Superstructure",
+    category: "Civil Construction",
+    image: etawaConst1,
   },
   {
     id: 2,
-    title: "High-Rise Construction & Tower Cranes",
-    category: "Civil Construction",
-    image:
-      "https://images.unsplash.com/photo-1541888946425-d0fbb186156f?auto=format&fit=crop&w=1400&q=85",
-    fallback:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1400&q=85",
+    title: "Project Anshal — Designer Living Space & False Ceiling",
+    category: "Interior Design",
+    image: anshalInt1,
   },
   {
     id: 3,
-    title: "Engineering Team Project Coordination",
-    category: "Consultancy & Planning",
-    image:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=85",
-    fallback:
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1400&q=85",
+    title: "Project 3 — Foundation & Structural Site Execution",
+    category: "Construction & Engineering",
+    image: p3Const1,
   },
   {
     id: 4,
-    title: "Heavy Industrial Steel Fabrication",
-    category: "Fabrication Works",
-    image:
-      "https://images.unsplash.com/photo-1504917599217-d4dc5ebe6122?auto=format&fit=crop&w=1400&q=85",
-    fallback:
-      "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=1400&q=85",
+    title: "Project 4 — Multi-Level Commercial Framework",
+    category: "Civil & Structural",
+    image: p4Const1,
   },
   {
     id: 5,
-    title: "Luxury Residential Architecture",
-    category: "Architectural Planning",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85",
-    fallback:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1400&q=85",
+    title: "Project Anshal — Premium Wall Craft & Ambient Lighting",
+    category: "Interior Design",
+    image: anshalInt4,
   },
   {
     id: 6,
-    title: "Metropolitan Skyscraper Facade",
-    category: "Commercial High-Rise",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85",
-    fallback:
-      "https://images.unsplash.com/photo-1514565131-fce0801e5785?auto=format&fit=crop&w=1400&q=85",
+    title: "Project 5 — Structural Site Work & Framing",
+    category: "Civil Construction",
+    image: p5Const1,
+  },
+  {
+    id: 7,
+    title: "Etawa House — Luxury Interior Living Space",
+    category: "Interior Design",
+    image: etawaInt1,
+  },
+  {
+    id: 8,
+    title: "Project 3 — Luxury Bedroom Suite & Custom Paneling",
+    category: "Interior Design",
+    image: p3Int1,
+  },
+  {
+    id: 9,
+    title: "Project Anshal — Elegant Dining & Modular Finishing",
+    category: "Interior Design",
+    image: anshalInt5,
+  },
+  {
+    id: 10,
+    title: "Project 4 — RCC Beam & Slab Reinforcement",
+    category: "Civil & Structural",
+    image: p4Const2,
+  },
+  {
+    id: 11,
+    title: "Etawa House — Designer Ceiling & Cove Lights",
+    category: "Interior Design",
+    image: etawaInt2,
+  },
+  {
+    id: 12,
+    title: "Project 5 — Modern Interior Living & Hallway",
+    category: "Interior Design",
+    image: p5Int1,
   },
 ];
 

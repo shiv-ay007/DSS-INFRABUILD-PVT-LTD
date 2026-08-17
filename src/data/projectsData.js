@@ -14,7 +14,7 @@ export const allProjects = [
     contractType: "Turnkey",
     year: "2024",
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_51.jpg",
     desc: "18-story multi-tenant corporate headquarters featuring double-glazed curtain glass facade, intelligent HVAC climate control, and post-tensioned wide-span floors.",
     overviewParagraphs: [
       "Apex Corporate Landmark Towers stands as a beacon of modern corporate infrastructure in Lucknow's premier business district. Spanning 340,000 sq. ft. across 18 floors, this Grade-A commercial complex combines cutting-edge architecture with sustainable engineering.",
@@ -31,10 +31,10 @@ export const allProjects = [
       "3D BIM Clash-Free Construction Execution",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80",
+      "/assets/projects_media/project_media_52.jpg",
+      "/assets/projects_media/project_media_53.jpg",
+      "/assets/projects_media/project_media_54.jpg",
+      "/assets/projects_media/project_media_16.jpg",
     ],
   },
   {
@@ -52,7 +52,7 @@ export const allProjects = [
     contractType: "EPC & Turnkey",
     year: "2023",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_55.jpg",
     desc: "Ultra-luxury gated enclave of 24 bespoke Mediterranean villas with imported Italian marble flooring, private infinity plunge pools, and solar-smart roofing.",
     overviewParagraphs: [
       "The Grand Royal Villa Enclave represents the pinnacle of luxury living in Lucknow. Comprising 24 bespoke Mediterranean-inspired villas, each residence is crafted with meticulous attention to detail, spatial balance, and structural longevity.",
@@ -69,10 +69,10 @@ export const allProjects = [
       "Integrated Smart Home Automation & Security",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+      "/assets/projects_media/project_media_56.jpg",
+      "/assets/projects_media/project_media_57.jpg",
+      "/assets/projects_media/project_media_58.jpg",
+      "/assets/projects_media/project_media_59.jpg",
     ],
   },
   {
@@ -90,7 +90,7 @@ export const allProjects = [
     contractType: "Turnkey PEB",
     year: "2024",
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_60.jpg",
     desc: "Heavy-duty clear-span pre-engineered steel warehouse park engineered with laser-leveled FM2 industrial flooring and automated dock levelers.",
     overviewParagraphs: [
       "Strategically situated along the Varanasi Industrial Corridor, this 520,000 sq. ft. mega logistics facility is built for heavy-throughput national supply chain operations.",
@@ -107,10 +107,10 @@ export const allProjects = [
       "High-Efficiency Solar Canopy & Rainwater Harvesting",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      "/assets/projects_media/project_media_61.jpg",
+      "/assets/projects_media/project_media_62.jpg",
+      "/assets/projects_media/project_media_63.jpg",
+      "/assets/projects_media/project_media_54.jpg",
     ],
   },
   {
@@ -128,7 +128,7 @@ export const allProjects = [
     contractType: "Turnkey Fit-Out",
     year: "2024",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_64.jpg",
     desc: "Turnkey corporate fit-out for 800 workstations, acoustic executive boardrooms, biophilic green walls, and custom modular collaboration pods.",
     overviewParagraphs: [
       "Designed and executed as a flagship tech facility in Vibhuti Khand, Lucknow, TechMatrix Hub accommodates 800 IT professionals across collaborative modern zones.",
@@ -145,10 +145,10 @@ export const allProjects = [
       "Smart DALI Energy-Saving Sensor Lighting",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "/assets/projects_media/project_media_53.jpg",
+      "/assets/projects_media/project_media_58.jpg",
+      "/assets/projects_media/project_media_59.jpg",
+      "/assets/projects_media/project_media_56.jpg",
     ],
   },
   {
@@ -166,7 +166,7 @@ export const allProjects = [
     contractType: "Civil & Structural",
     year: "2023",
     image:
-      "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_65.jpg",
     desc: "Heavy civil infrastructure including RCC prestressed concrete flyover piers, stormwater drainage viaducts, and high-tensile asphalt carpeting.",
     overviewParagraphs: [
       "A vital infrastructure artery connecting industrial nodes to the expressway, this 8.5 km civil engineering project was executed to rigorous highway structural standards.",
@@ -183,10 +183,10 @@ export const allProjects = [
       "Completed 45 Days Ahead of Contract Schedule",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
+      "/assets/projects_media/project_media_66.jpg",
+      "/assets/projects_media/project_media_54.jpg",
+      "/assets/projects_media/project_media_16.jpg",
+      "/assets/projects_media/project_media_63.jpg",
     ],
   },
   {
@@ -204,7 +204,7 @@ export const allProjects = [
     contractType: "Turnkey",
     year: "2023",
     image:
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_67.jpg",
     desc: "Twin 14-story residential towers with rooftop clubhouse, earthquake-resistant RCC shear walls, and rainwater conservation reservoir.",
     overviewParagraphs: [
       "Regal Heights comprises twin 14-story residential towers delivering 120 premium family residences along Faizabad Road, Lucknow.",
@@ -221,10 +221,10 @@ export const allProjects = [
       "Comprehensive 5-Tier Security Network",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      "/assets/projects_media/project_media_57.jpg",
+      "/assets/projects_media/project_media_56.jpg",
+      "/assets/projects_media/project_media_68.jpg",
+      "/assets/projects_media/project_media_52.jpg",
     ],
   },
   {
@@ -242,7 +242,7 @@ export const allProjects = [
     contractType: "Turnkey",
     year: "2024",
     image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=85",
+      "/assets/projects_media/project_media_69.jpg",
     desc: "Heavy industrial manufacturing facility spanning 500,000 sq. ft. equipped with overhead crane gantries, sub-arc welded steel framing, and industrial air scrubbing towers.",
     overviewParagraphs: [
       "The Steel Manufacturing Plant in Kanpur stands as one of the largest turnkey industrial facilities executed by DSS Infrabuild. Spanning over 500,000 sq. ft., this mega facility was engineered from greenfield ground breaking to full operational commissioning.",
@@ -259,10 +259,10 @@ export const allProjects = [
       "Full Safety & Environmental Compliance Handover",
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+      "/assets/projects_media/project_media_62.jpg",
+      "/assets/projects_media/project_media_61.jpg",
+      "/assets/projects_media/project_media_63.jpg",
+      "/assets/projects_media/project_media_54.jpg",
     ],
   },
 ];

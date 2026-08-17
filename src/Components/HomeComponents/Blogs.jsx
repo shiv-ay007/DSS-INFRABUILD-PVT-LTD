@@ -152,7 +152,7 @@ const Blogs = () => {
                         onError={(e) => {
                           e.currentTarget.src =
                             blog.fallback ||
-                            "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=800&q=80";
+                            "/assets/projects_media/project_media_16.jpg";
                         }}
                         className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover/card:scale-105"
                       />

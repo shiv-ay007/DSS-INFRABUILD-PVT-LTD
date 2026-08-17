@@ -15,7 +15,7 @@ const AboutStats = () => {
     <section
       className="relative py-16 sm:py-20 overflow-hidden bg-[#0c0c0e] text-white bg-fixed bg-cover bg-center"
       style={{
-        backgroundImage: `url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=2400&q=95')`,
+        backgroundImage: `url('/assets/projects_media/project_media_4.jpg')`,
       }}
     >
       {/* Crisp Dark Contrast Overlay */}

@@ -11,9 +11,9 @@ const projectsData = [
     location: "Gomti Nagar, Lucknow",
     href: "/project/1",
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_21.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_22.jpg",
   },
   {
     id: 2,
@@ -22,9 +22,9 @@ const projectsData = [
     location: "Sultanpur Road, Lucknow",
     href: "/project/2",
     image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_23.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_24.jpg",
   },
   {
     id: 3,
@@ -33,9 +33,9 @@ const projectsData = [
     location: "Varanasi Corridor",
     href: "/project/3",
     image:
-      "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_25.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_26.jpg",
   },
   {
     id: 7,
@@ -44,9 +44,9 @@ const projectsData = [
     location: "Kanpur, UP",
     href: "/project/7",
     image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_27.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_26.jpg",
   },
   {
     id: 4,
@@ -55,9 +55,9 @@ const projectsData = [
     location: "Vibhuti Khand, Lucknow",
     href: "/project/4",
     image:
-      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_28.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
+      "/assets/projects_media/project_media_29.jpg",
   },
 ];
 

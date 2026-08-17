@@ -43,9 +43,9 @@ const servicesList = [
       "Conceptual design, 3D visualization, structural planning, and building approval drawings with BIM integration.",
     icon: ArchitectureIcon,
     bgImage:
-      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_31.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_32.jpg",
   },
   {
     id: "construction",
@@ -55,9 +55,9 @@ const servicesList = [
       "Residential, commercial, and institutional construction with quality materials and timely delivery.",
     icon: ConstructionHelmetIcon,
     bgImage:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_33.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_34.jpg",
   },
   {
     id: "interior-design",
@@ -67,9 +67,9 @@ const servicesList = [
       "Modern interiors, modular kitchens, false ceilings, and custom furniture design for residential & commercial spaces.",
     icon: InteriorDesignIcon,
     bgImage:
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_35.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_36.jpg",
   },
   {
     id: "fabrication-works",
@@ -79,9 +79,9 @@ const servicesList = [
       "Structural steel fabrication, PEB structures, gates, railings, and heavy metal fabrication solutions.",
     icon: FactoryIcon,
     bgImage:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_37.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_38.jpg",
   },
   {
     id: "consultancy",
@@ -91,9 +91,9 @@ const servicesList = [
       "Project estimation, site supervision, material testing, and value engineering consultancy services.",
     icon: HandshakeIcon,
     bgImage:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_39.jpg",
     fallback:
-      "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1000&q=80",
+      "/assets/projects_media/project_media_40.jpg",
   },
 ];
 

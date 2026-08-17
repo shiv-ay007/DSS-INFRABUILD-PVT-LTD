@@ -103,7 +103,7 @@ const BlogDetailView = () => {
             onError={(e) => {
               e.currentTarget.src =
                 blog.fallback ||
-                "https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?auto=format&fit=crop&w=1200&q=85";
+                "/assets/projects_media/project_media_15.jpg";
             }}
           />
         </div>
