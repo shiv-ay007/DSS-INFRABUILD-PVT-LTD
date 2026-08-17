@@ -14,14 +14,14 @@ const GalleryGrid = () => {
       : galleryImages.filter((p) => p.category === activeCategory);
 
   return (
-    <section className="py-12 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 overflow-hidden">
+    <section className="py-8 sm:py-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 overflow-hidden">
       {/* Category Filter Tabs */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10"
+        className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-6 sm:mb-7"
       >
         {galleryCategories.map((cat) => (
           <motion.button
@@ -30,7 +30,7 @@ const GalleryGrid = () => {
             whileTap={{ scale: 0.96 }}
             type="button"
             onClick={() => setActiveCategory(cat)}
-            className={`px-5 py-2 rounded-full text-xs sm:text-sm font-semibold tracking-wide transition-all cursor-pointer ${
+            className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-semibold tracking-wide transition-all cursor-pointer ${
               activeCategory === cat
                 ? "bg-[#e05609] text-white shadow-md shadow-orange-500/20"
                 : "bg-white text-gray-700 hover:bg-gray-100 border border-gray-200"
@@ -44,7 +44,7 @@ const GalleryGrid = () => {
       {/* Gallery Grid */}
       <motion.div
         layout
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4"
       >
         <AnimatePresence>
           {filteredProjects.map((project, idx) => (
@@ -56,7 +56,7 @@ const GalleryGrid = () => {
               transition={{ duration: 0.35, delay: idx * 0.04 }}
               key={project.id}
               onClick={() => setSelectedProject(project)}
-              className="group relative h-72 sm:h-80 rounded-2xl overflow-hidden bg-gray-100 shadow-sm hover:shadow-xl border border-gray-100 cursor-pointer"
+              className="group relative h-64 sm:h-72 rounded-2xl overflow-hidden bg-gray-100 shadow-xs hover:shadow-xl border border-gray-100 cursor-pointer"
             >
               {/* Construction Site Cover Image */}
               <img

@@ -17,14 +17,14 @@ const ProjectsGrid = () => {
   };
 
   return (
-    <section className="py-12 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 overflow-hidden">
+    <section className="py-8 sm:py-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 overflow-hidden">
       {/* Category Filter Tabs */}
       <motion.div
         initial={{ opacity: 0, y: 15 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12"
+        className="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-6 sm:mb-7"
       >
         {projectCategories.map((cat) => (
           <motion.button
@@ -33,7 +33,7 @@ const ProjectsGrid = () => {
             whileTap={{ scale: 0.95 }}
             type="button"
             onClick={() => setActiveCategory(cat)}
-            className={`px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm font-bold tracking-wide transition-all cursor-pointer ${
+            className={`px-4 sm:px-5 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-bold tracking-wide transition-all cursor-pointer ${
               activeCategory === cat
                 ? "bg-[#e05609] text-white shadow-md shadow-orange-500/20"
                 : "bg-[#f5f5f5] text-gray-700 hover:bg-gray-200 border border-gray-200"
@@ -45,7 +45,7 @@ const ProjectsGrid = () => {
       </motion.div>
 
       {/* Grid of Projects */}
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3.5 sm:gap-4.5">
         <AnimatePresence>
           {filteredProjects.map((project) => (
             <motion.div
@@ -56,10 +56,10 @@ const ProjectsGrid = () => {
               transition={{ duration: 0.35 }}
               key={project.id}
               onClick={() => handleProjectClick(project.id)}
-              className="group bg-white rounded-2xl border border-gray-200/90 hover:border-[#e05609] shadow-sm transition-colors duration-200 overflow-hidden cursor-pointer flex flex-col justify-between"
+              className="group bg-white rounded-2xl border border-gray-200/90 hover:border-[#e05609] shadow-xs transition-colors duration-200 overflow-hidden cursor-pointer flex flex-col justify-between"
             >
               {/* Image & Badge */}
-              <div className="h-64 w-full overflow-hidden relative bg-gray-100">
+              <div className="h-56 sm:h-60 w-full overflow-hidden relative bg-gray-100">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -83,7 +83,7 @@ const ProjectsGrid = () => {
               </div>
 
               {/* Card Meta Footer */}
-              <div className="p-5 flex items-center justify-between border-t border-gray-100">
+              <div className="p-3.5 sm:p-4 flex items-center justify-between border-t border-gray-100">
                 <div>
                   <span className="text-xs text-gray-500 block">Scope & Area</span>
                   <span className="text-sm font-bold text-gray-800">

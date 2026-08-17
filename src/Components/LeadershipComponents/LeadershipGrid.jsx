@@ -60,14 +60,14 @@ const teamMembers = [
 
 const LeadershipGrid = () => {
   return (
-    <section className="py-16 sm:py-20 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 bg-[#fafafa]">
+    <section className="py-10 sm:py-12 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 bg-[#fafafa]">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="text-center max-w-3xl mx-auto mb-14 space-y-2"
+        className="text-center max-w-3xl mx-auto mb-6 sm:mb-8 space-y-1.5"
       >
         <div className="flex items-center justify-center space-x-2 text-[#e05609] text-xs font-bold tracking-widest uppercase">
           <span className="w-6 h-[2px] bg-[#e05609] inline-block"></span>
@@ -78,13 +78,13 @@ const LeadershipGrid = () => {
           Meet Our <span className="text-[#e05609]">Core Team</span>
         </h2>
 
-        <p className="text-gray-600 text-sm sm:text-base">
+        <p className="text-gray-600 text-xs sm:text-sm">
           A team of dedicated professionals committed to excellence in every project
         </p>
       </motion.div>
 
       {/* 4 Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5 sm:gap-4.5">
         {teamMembers.map((member, i) => (
           <motion.div
             key={i}
@@ -92,10 +92,10 @@ const LeadershipGrid = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.5, delay: i * 0.1, ease: "easeOut" }}
-            className="group bg-white rounded-2xl border border-gray-200/90 hover:border-[#e05609] shadow-sm transition-colors duration-200 overflow-hidden flex flex-col justify-between"
+            className="group bg-white rounded-2xl border border-gray-200/90 hover:border-[#e05609] shadow-xs transition-colors duration-200 overflow-hidden flex flex-col justify-between"
           >
             {/* Top Photo & Floating Dept Badge */}
-            <div className="h-72 w-full relative overflow-hidden bg-[#f4f5f7] flex items-end justify-center">
+            <div className="h-60 sm:h-64 w-full relative overflow-hidden bg-[#f4f5f7] flex items-end justify-center">
               <img
                 src={member.image}
                 alt={member.name}
@@ -104,35 +104,35 @@ const LeadershipGrid = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-80" />
 
               {/* Department Badge */}
-              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 bg-black/75 backdrop-blur-xs text-white text-[11px] font-bold px-3.5 py-1 rounded-full uppercase tracking-wider flex items-center space-x-1.5 whitespace-nowrap shadow-sm border border-white/10">
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-10 bg-black/75 backdrop-blur-xs text-white text-[10.5px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider flex items-center space-x-1.5 whitespace-nowrap shadow-xs border border-white/10">
                 <span className="text-xs">{member.deptIcon}</span>
                 <span>{member.department}</span>
               </div>
             </div>
 
             {/* Bottom Card Content */}
-            <div className="p-6 text-center flex-grow flex flex-col justify-between space-y-3">
+            <div className="p-4 sm:p-4.5 text-center flex-grow flex flex-col justify-between space-y-2">
               <div>
-                <h3 className="text-lg font-bold text-gray-950 group-hover:text-[#e05609] transition-colors">
+                <h3 className="text-base sm:text-lg font-bold text-gray-950 group-hover:text-[#e05609] transition-colors">
                   {member.name}
                 </h3>
-                <p className="text-xs font-bold text-[#e05609] tracking-wider uppercase mt-0.5">
+                <p className="text-[11px] font-bold text-[#e05609] tracking-wider uppercase mt-0.5">
                   {member.role}
                 </p>
               </div>
 
-              <p className="text-xs sm:text-[13px] text-gray-600 leading-relaxed line-clamp-3">
+              <p className="text-xs text-gray-600 leading-relaxed line-clamp-3">
                 {member.bio}
               </p>
 
               {/* Social Icons */}
-              <div className="pt-2 flex items-center justify-center space-x-2">
+              <div className="pt-1 flex items-center justify-center space-x-2">
                 {member.socials.map((soc, idx) => (
                   <a
                     key={idx}
                     href={soc.href}
                     aria-label={`${member.name} ${soc.type}`}
-                    className="w-8 h-8 rounded-full border border-gray-200 hover:border-[#e05609] bg-gray-50 hover:bg-[#e05609] text-gray-500 hover:text-white flex items-center justify-center text-xs font-bold transition-all shadow-2xs"
+                    className="w-7 h-7 sm:w-8 sm:h-8 rounded-full border border-gray-200 hover:border-[#e05609] bg-gray-50 hover:bg-[#e05609] text-gray-500 hover:text-white flex items-center justify-center text-xs font-bold transition-all shadow-2xs"
                   >
                     {soc.type === "linkedin" && "in"}
                     {soc.type === "email" && "✉"}

@@ -110,7 +110,7 @@ const FutureProject = () => {
   }, [isPaused, maxIndex]);
 
   return (
-    <section className="relative w-full py-12 sm:py-14 lg:py-16 bg-[#f5f5f5] overflow-hidden font-sans border-t border-gray-200/60">
+    <section className="relative w-full py-10 sm:py-12 bg-[#f5f5f5] overflow-hidden font-sans border-t border-gray-200/60">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         
         {/* ========================================================================= */}
@@ -121,7 +121,7 @@ const FutureProject = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="flex flex-col md:flex-row md:items-end justify-between mb-6 sm:mb-8 gap-4"
+          className="flex flex-col md:flex-row md:items-end justify-between mb-5 sm:mb-7 gap-4"
         >
           {/* Left Text Box */}
           <div className="space-y-1.5">
@@ -195,7 +195,7 @@ const FutureProject = () => {
           onMouseLeave={() => setIsPaused(false)}
         >
           <div
-            className="flex -mx-2.5 sm:-mx-3 transition-transform duration-500 ease-in-out"
+            className="flex -mx-2 sm:-mx-2.5 transition-transform duration-500 ease-in-out"
             style={{
               transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
             }}
@@ -203,7 +203,7 @@ const FutureProject = () => {
             {projectsData.map((project) => (
               <div
                 key={project.id}
-                className="w-full lg:w-1/2 min-w-full lg:min-w-[50%] px-2.5 sm:px-3 flex-shrink-0"
+                className="w-full lg:w-1/2 min-w-full lg:min-w-[50%] px-2 sm:px-2.5 flex-shrink-0"
               >
                 <Link
                   to={project.href}

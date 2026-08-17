@@ -10,7 +10,7 @@ const PageHero = ({
   bgImage = "/assets/projects_media/project_media_18.jpg",
 }) => {
   return (
-    <section className="relative min-h-[290px] sm:min-h-[330px] lg:min-h-[370px] flex items-center justify-center text-center pt-28 sm:pt-32 lg:pt-36 pb-12 sm:pb-14 lg:pb-16 px-4 overflow-hidden bg-[#141416]">
+    <section className="relative min-h-[240px] sm:min-h-[270px] lg:min-h-[290px] flex items-center justify-center text-center pt-24 sm:pt-28 lg:pt-30 pb-8 sm:pb-10 lg:pb-11 px-4 overflow-hidden bg-[#141416]">
       {/* Background Image with Framer Motion Zoom effect */}
       <motion.div
         initial={{ scale: 1.15, opacity: 0 }}

@@ -200,7 +200,7 @@ const ProjectGallery = () => {
   }, [lightboxOpen]);
 
   return (
-    <section className="relative w-full py-12 sm:py-14 lg:py-16 bg-[#fafafa] overflow-hidden font-sans border-t border-gray-200/60">
+    <section className="relative w-full py-10 sm:py-12 bg-[#fafafa] overflow-hidden font-sans border-t border-gray-200/60">
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
         
         {/* Header Section */}
@@ -209,7 +209,7 @@ const ProjectGallery = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-center space-y-1.5 mb-7 sm:mb-9 max-w-2xl mx-auto"
+          className="text-center space-y-1.5 mb-5 sm:mb-7 max-w-2xl mx-auto"
         >
           {/* Top Tag */}
           <div className="inline-flex items-center justify-center space-x-2.5">
@@ -239,7 +239,7 @@ const ProjectGallery = () => {
           {/* Overflow Container */}
           <div className="overflow-hidden rounded-xl">
             <div
-              className="flex -mx-2.5 sm:-mx-3 transition-transform duration-500 ease-in-out"
+              className="flex -mx-2 sm:-mx-2.5 transition-transform duration-500 ease-in-out"
               style={{
                 transform: `translateX(-${currentIndex * (100 / itemsPerView)}%)`,
               }}
@@ -247,7 +247,7 @@ const ProjectGallery = () => {
               {galleryItems.map((item, index) => (
                 <div
                   key={item.id}
-                  className="w-full sm:w-1/2 lg:w-1/3 min-w-full sm:min-w-[50%] lg:min-w-[33.333333%] px-2.5 sm:px-3 flex-shrink-0"
+                  className="w-full sm:w-1/2 lg:w-1/3 min-w-full sm:min-w-[50%] lg:min-w-[33.333333%] px-2 sm:px-2.5 flex-shrink-0"
                 >
                   <div
                     onClick={() => openLightbox(index)}
