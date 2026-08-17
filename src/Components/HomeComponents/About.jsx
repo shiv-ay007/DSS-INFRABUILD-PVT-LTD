@@ -48,7 +48,7 @@ const About = () => {
         {/* ========================================================================= */}
         {/* 1. TOP 2-COLUMN MAIN CONTENT (LARGE & SPACIOUS)                           */}
         {/* ========================================================================= */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           
           {/* --- LEFT COLUMN: HEADING, STORY & METRIC CARDS (6.5 Cols) --- */}
           <motion.div
@@ -145,7 +145,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7, ease: "easeOut" }}
-            className="lg:col-span-6 xl:col-span-6 flex flex-col justify-between h-full space-y-6 sm:space-y-8"
+            className="lg:col-span-6 xl:col-span-6 flex flex-col space-y-4 sm:space-y-5"
           >
             
             {/* 1. Large Construction Site Image Box */}
@@ -153,7 +153,7 @@ const About = () => {
               <img
                 src={aboutImg}
                 alt="DSS Infrabuild Construction Work"
-                className="w-full h-[300px] sm:h-[380px] lg:h-[420px] xl:h-[440px] object-cover block transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-[250px] sm:h-[290px] lg:h-[315px] xl:h-[325px] object-cover block transition-transform duration-500 group-hover:scale-105"
                 onError={(e) => {
                   e.currentTarget.src =
                     "/assets/projects_media/project_media_20.jpg";
