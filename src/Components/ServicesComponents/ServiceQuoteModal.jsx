@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FiX, FiSend, FiLock, FiCheckCircle } from "react-icons/fi";
+import { FiX, FiSend, FiLock, FiCheckCircle, FiChevronDown, FiCheck } from "react-icons/fi";
 import { servicesData } from "../../data/servicesData";
 import toast from "react-hot-toast";
 
@@ -35,6 +35,36 @@ const ServiceQuoteModal = ({
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  const mainServicesList = [
+    "Architectural Planning",
+    "Construction",
+    "Interior Design",
+    "Fabrication Works",
+    "Consultancy",
+    "Other",
+  ];
+
+  // Options to display in dropdown
+  const dropdownOptions = [
+    ...(formData.service && !mainServicesList.includes(formData.service)
+      ? [formData.service]
+      : []),
+    ...mainServicesList,
+  ];
+
+  // Close dropdown on click outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // Sync state whenever modal opens or props change
   useEffect(() => {
@@ -64,6 +94,7 @@ const ServiceQuoteModal = ({
         dontShowAgain: isSavedDontShow,
       }));
       setSubmitted(false);
+      setIsDropdownOpen(false);
     }
   }, [serviceTitle, subServiceTitle, isOpen]);
 
@@ -97,6 +128,20 @@ const ServiceQuoteModal = ({
     } catch (err) {
       console.error(err);
     }
+  };
+
+  const handleSelectService = (selectedVal) => {
+    setFormData({
+      ...formData,
+      service: selectedVal,
+      message:
+        selectedVal === "Other"
+          ? "I have custom requirements for my project. Please provide me with a consultation and quote."
+          : selectedVal
+          ? `I am interested in ${selectedVal} service. Please provide me with a quote.`
+          : "",
+    });
+    setIsDropdownOpen(false);
   };
 
   const handleSubmit = async (e) => {
@@ -282,47 +327,76 @@ const ServiceQuoteModal = ({
                     />
                   </div>
 
-                  {/* Service Interested In Dropdown */}
-                  <div>
+                  {/* Custom Styled Dropdown With Pure Website Orange Highlight */}
+                  <div className="relative" ref={dropdownRef}>
                     <label className="block text-xs font-semibold text-gray-700 mb-1">
                       Service Interested In
                     </label>
-                    <select
-                      value={formData.service}
-                      onChange={(e) => {
-                        const newService = e.target.value;
-                        setFormData({
-                          ...formData,
-                          service: newService,
-                          message: newService
-                            ? `I am interested in ${newService} service. Please provide me with a quote.`
-                            : "",
-                        });
-                      }}
-                      className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-xs sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#e05609]/30 focus:border-[#e05609] transition-all cursor-pointer"
+
+                    {/* Dropdown Button */}
+                    <button
+                      type="button"
+                      onClick={() => setIsDropdownOpen((prev) => !prev)}
+                      className={`w-full px-3.5 py-2.5 rounded-lg border text-left text-xs sm:text-sm bg-white flex items-center justify-between transition-all cursor-pointer focus:outline-none ${
+                        isDropdownOpen
+                          ? "border-[#e05609] ring-2 ring-[#e05609]/20"
+                          : "border-gray-300 hover:border-gray-400"
+                      }`}
                     >
-                      <option value="">Select a service...</option>
+                      <span className={formData.service ? "text-gray-900 font-medium" : "text-gray-400"}>
+                        {formData.service || "Select a service..."}
+                      </span>
+                      <FiChevronDown
+                        className={`text-[#e05609] text-base transition-transform duration-200 ${
+                          isDropdownOpen ? "rotate-180" : ""
+                        }`}
+                      />
+                    </button>
 
-                      {/* Auto-fill & select specific clicked sub-service / custom service */}
-                      {formData.service &&
-                        ![
-                          "Architectural Planning",
-                          "Construction",
-                          "Interior Design",
-                          "Fabrication Works",
-                          "Consultancy",
-                        ].includes(formData.service) && (
-                          <option value={formData.service}>
-                            {formData.service}
-                          </option>
-                        )}
+                    {/* Dropdown Options Popup */}
+                    <AnimatePresence>
+                      {isDropdownOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -4 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -4 }}
+                          transition={{ duration: 0.15 }}
+                          className="absolute left-0 right-0 top-full mt-1.5 bg-white border border-gray-200 rounded-xl shadow-xl z-50 overflow-hidden py-1 max-h-56 overflow-y-auto"
+                        >
+                          {/* Default Reset Option */}
+                          <button
+                            type="button"
+                            onClick={() => handleSelectService("")}
+                            className="w-full text-left px-4 py-2.5 text-xs sm:text-sm text-gray-400 hover:bg-orange-50 hover:text-[#e05609] transition-colors cursor-pointer"
+                          >
+                            Select a service...
+                          </button>
 
-                      <option value="Architectural Planning">Architectural Planning</option>
-                      <option value="Construction">Construction</option>
-                      <option value="Interior Design">Interior Design</option>
-                      <option value="Fabrication Works">Fabrication Works</option>
-                      <option value="Consultancy">Consultancy</option>
-                    </select>
+                          {/* Service Options List */}
+                          {dropdownOptions.map((serviceName) => {
+                            const isSelected = formData.service === serviceName;
+
+                            return (
+                              <button
+                                key={serviceName}
+                                type="button"
+                                onClick={() => handleSelectService(serviceName)}
+                                className={`w-full text-left px-4 py-2.5 text-xs sm:text-sm flex items-center justify-between transition-colors cursor-pointer ${
+                                  isSelected
+                                    ? "bg-[#e05609] text-white font-semibold"
+                                    : "text-gray-800 hover:bg-[#e05609] hover:text-white"
+                                }`}
+                              >
+                                <span>{serviceName}</span>
+                                {isSelected && (
+                                  <FiCheck className="text-white text-base flex-shrink-0" />
+                                )}
+                              </button>
+                            );
+                          })}
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
                   </div>
 
                   {/* Message Textarea */}
