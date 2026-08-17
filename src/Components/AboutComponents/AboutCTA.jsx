@@ -42,7 +42,7 @@ const AboutCTA = () => {
             </div>
 
             {/* Heading */}
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight leading-tight">
+            <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-white tracking-tight leading-tight">
               Ready to Build Your{" "}
               <span className="text-[#e05609]">Dream Project?</span>
             </h2>

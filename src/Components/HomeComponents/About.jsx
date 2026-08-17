@@ -68,7 +68,7 @@ const About = () => {
             </div>
 
             {/* Main Section Headline */}
-            <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-[58px] xl:text-[64px] font-bold text-gray-950 tracking-tight leading-[1.12]">
+            <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-gray-950 tracking-tight leading-tight">
               Building{" "}
               <span className="text-[#e05609] relative inline-block">
                 Dreams

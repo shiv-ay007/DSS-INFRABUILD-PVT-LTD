@@ -361,15 +361,7 @@ const Navbar = () => {
           {/* ========================================================================= */}
           {/* 4. MOBILE HAMBURGER BUTTON                                                */}
           {/* ========================================================================= */}
-          <div className="flex items-center lg:hidden space-x-3">
-            <Link
-              to="/contact"
-              onClick={handleLinkClick}
-              className="sm:hidden inline-flex items-center justify-center bg-[#e05609] text-white px-3.5 py-2 rounded-lg text-xs font-semibold cursor-pointer"
-            >
-              Get Quote
-            </Link>
-
+          <div className="flex items-center lg:hidden">
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

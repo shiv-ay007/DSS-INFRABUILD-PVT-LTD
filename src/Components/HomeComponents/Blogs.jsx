@@ -96,7 +96,7 @@ const Blogs = () => {
             </div>
 
             {/* Headline */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-950 tracking-tight leading-tight">
+            <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-gray-950 tracking-tight leading-tight">
               Latest <span className="text-[#e05609]">Articles</span>
             </h2>
 

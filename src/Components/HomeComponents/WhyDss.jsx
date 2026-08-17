@@ -109,7 +109,7 @@ const WhyDss = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] font-bold text-white tracking-tight leading-tight">
+          <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-white tracking-tight leading-tight">
             Six reasons clients trust us with their{" "}
             <span className="text-[#e05609]">biggest projects.</span>
           </h2>

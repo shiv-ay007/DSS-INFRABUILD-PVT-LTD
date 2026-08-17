@@ -126,7 +126,7 @@ const Services = () => {
           </div>
 
           {/* Headline */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+          <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold tracking-tight text-white leading-tight">
             Our <span className="text-[#e05609]">Core Services</span>
           </h2>
 

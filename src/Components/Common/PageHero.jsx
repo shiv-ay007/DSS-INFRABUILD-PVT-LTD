@@ -67,7 +67,7 @@ const PageHero = ({
           initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight font-sans drop-shadow-md"
+          className="text-[1.3rem] sm:text-[2.2rem] font-bold tracking-tight text-white leading-tight font-sans drop-shadow-md"
         >
           {title}{" "}
           {highlightWord && (

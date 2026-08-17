@@ -97,15 +97,15 @@ const WorkProcess = () => {
       </svg>
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
           
           {/* ========================================================================= */}
-          {/* LEFT COLUMN: LARGER BALANCED HEADER & CURVED MASK IMAGE (STICKY ON DESKTOP) */}
+          {/* LEFT COLUMN: BALANCED HEADER & CURVED MASK IMAGE (STICKY ON DESKTOP)      */}
           {/* ========================================================================= */}
-          <div className="lg:sticky lg:top-24 space-y-6 sm:space-y-8">
+          <div className="lg:col-span-6 lg:sticky lg:top-24 space-y-5 sm:space-y-6">
             
-            {/* Top Tag & Colorful Highlighted Main Headline */}
-            <div className="space-y-3 sm:space-y-4">
+            {/* Top Tag & Main Headline */}
+            <div className="space-y-2.5 sm:space-y-3">
               <div className="flex items-center space-x-2.5">
                 <span className="w-6 h-[2px] bg-[#e05609] rounded-full"></span>
                 <span className="text-[#e05609] font-extrabold text-xs sm:text-sm tracking-widest uppercase">
@@ -113,19 +113,19 @@ const WorkProcess = () => {
                 </span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[48px] font-black text-gray-950 tracking-tight leading-[1.1] uppercase">
+              <h2 className="text-[1.3rem] sm:text-[2.2rem] font-black text-gray-950 tracking-tight leading-[1.15] uppercase">
                 STRATEGIC <span className="text-[#e05609]">STEPS</span> <br />
                 TO <span className="text-[#e05609]">IMPACTFUL</span> <br />
                 RESULTS
               </h2>
 
-              <p className="text-gray-500 text-xs sm:text-sm font-normal max-w-md">
+              <p className="text-gray-500 text-xs sm:text-sm font-normal max-w-md leading-relaxed">
                 A structured, disciplined methodology ensuring complete transparency, architectural integrity, and on-time project completion.
               </p>
             </div>
 
-            {/* Enlarged Signature Curved Image Container matching Right Column Scale */}
-            <div className="relative w-full max-w-[540px] group">
+            {/* Signature Curved Image Container perfectly proportional to Right Column */}
+            <div className="relative w-full max-w-[500px] group">
               
               {/* Subtle Ambient Glow */}
               <div 
@@ -133,9 +133,9 @@ const WorkProcess = () => {
                 style={{ clipPath: "url(#process-curve-mask)" }}
               />
 
-              {/* The Enlarged Curved Image Card */}
+              {/* The Curved Image Card */}
               <div
-                className="relative w-full h-[380px] sm:h-[440px] md:h-[480px] lg:h-[500px] overflow-hidden bg-gray-200 shadow-2xl transition-transform duration-500 group-hover:scale-[1.01]"
+                className="relative w-full h-[320px] sm:h-[380px] md:h-[420px] lg:h-[440px] overflow-hidden bg-gray-200 shadow-xl transition-transform duration-500 group-hover:scale-[1.01]"
                 style={{
                   clipPath: "url(#process-curve-mask)",
                   WebkitClipPath: "url(#process-curve-mask)",
@@ -159,15 +159,15 @@ const WorkProcess = () => {
           </div>
 
           {/* ========================================================================= */}
-          {/* RIGHT COLUMN: TIMELINE WITH LINE PASSING DEAD-CENTER THROUGH CIRCLES       */}
+          {/* RIGHT COLUMN: TIMELINE WITH BALANCED NUMBERS & TEXT                        */}
           {/* ========================================================================= */}
-          <div className="relative">
+          <div className="lg:col-span-6 relative">
             
-            {/* Continuous Vertical Timeline Line Passing Exactly Through Center of All Circles */}
-            <div className="absolute left-[14px] sm:left-[16px] -translate-x-1/2 top-4 bottom-5 w-[2px] bg-gray-300 pointer-events-none z-0" />
+            {/* Continuous Vertical Timeline Line */}
+            <div className="absolute left-[13px] sm:left-[15px] -translate-x-1/2 top-3.5 bottom-4 w-[2px] bg-gray-300 pointer-events-none z-0" />
 
-            {/* List of 7 Steps */}
-            <div className="space-y-8 sm:space-y-10 relative z-10">
+            {/* List of 7 Steps with Tightened Balanced Spacing */}
+            <div className="space-y-5 sm:space-y-6 relative z-10">
               {stepsData.map((item) => {
                 const isActive = activeStep === item.id;
 
@@ -180,18 +180,18 @@ const WorkProcess = () => {
                   >
                     
                     {/* --- Timeline Circular Node (100% Centered on the vertical line) --- */}
-                    <div className="w-7 sm:w-8 flex-shrink-0 flex items-center justify-center mt-1">
+                    <div className="w-6 sm:w-7 flex-shrink-0 flex items-center justify-center mt-1">
                       <div
-                        className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full flex items-center justify-center transition-all duration-300 ${
+                        className={`w-5 h-5 sm:w-6 sm:h-6 rounded-full flex items-center justify-center transition-all duration-300 ${
                           isActive
-                            ? "bg-white border-2 border-[#e05609] ring-4 ring-orange-100/90 shadow-md scale-110"
+                            ? "bg-white border-2 border-[#e05609] ring-3 ring-orange-100/90 shadow-xs scale-105"
                             : "bg-[#f5f5f5] border-2 border-gray-300 group-hover:border-[#e05609] group-hover:bg-white group-hover:scale-105"
                         }`}
                       >
                         <div
                           className={`rounded-full transition-all duration-300 ${
                             isActive
-                              ? "w-2.5 h-2.5 bg-[#e05609]"
+                              ? "w-2 h-2 bg-[#e05609]"
                               : "w-1.5 h-1.5 bg-gray-400 group-hover:bg-[#e05609]"
                           }`}
                         />
@@ -199,26 +199,26 @@ const WorkProcess = () => {
                     </div>
 
                     {/* --- Number, Title, Floating Radar & Description --- */}
-                    <div className="flex-1 flex items-start space-x-4 sm:space-x-5 pl-4 sm:pl-5">
+                    <div className="flex-1 flex items-start space-x-3.5 sm:space-x-4 pl-3 sm:pl-4">
                       
-                      {/* Big Orange Numeral */}
+                      {/* Compact Bold Numeral */}
                       <span
-                        className={`text-4xl sm:text-5xl lg:text-[52px] font-black leading-none select-none transition-transform duration-300 ${
+                        className={`text-2xl sm:text-3xl lg:text-[32px] font-black leading-none select-none transition-colors duration-200 flex-shrink-0 pt-0.5 ${
                           isActive
-                            ? "text-[#e05609] scale-105"
-                            : "text-[#e05609] group-hover:scale-105"
+                            ? "text-[#e05609]"
+                            : "text-[#e05609]/90 group-hover:text-[#e05609]"
                         }`}
                       >
                         {item.number}
                       </span>
 
                       {/* Content Box */}
-                      <div className="space-y-1 flex-1">
+                      <div className="space-y-0.5 flex-1">
                         
                         {/* Title Row */}
-                        <div className="flex items-center space-x-2.5">
+                        <div className="flex items-center space-x-2">
                           <h3
-                            className={`text-lg sm:text-xl md:text-2xl font-bold tracking-tight transition-colors duration-200 ${
+                            className={`text-sm sm:text-base lg:text-[17px] font-bold tracking-tight transition-colors duration-200 ${
                               isActive
                                 ? "text-gray-950"
                                 : "text-gray-800 group-hover:text-gray-950"
@@ -229,15 +229,15 @@ const WorkProcess = () => {
 
                           {/* Floating Radar Node Indicator */}
                           {isActive && (
-                            <span className="inline-flex items-center justify-center w-4 h-4 sm:w-5 sm:h-5 rounded-full border border-gray-400/80 bg-white/90 shadow-xs">
-                              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-gray-600 animate-ping"></span>
+                            <span className="inline-flex items-center justify-center w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full border border-gray-400/80 bg-white/90 shadow-2xs">
+                              <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-gray-600 animate-ping"></span>
                               <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 rounded-full bg-gray-800 absolute"></span>
                             </span>
                           )}
                         </div>
 
                         {/* Description Paragraph */}
-                        <p className="text-gray-500 text-xs sm:text-sm md:text-[14.5px] leading-relaxed font-normal max-w-xl">
+                        <p className="text-gray-500 text-xs sm:text-[13px] leading-relaxed font-normal max-w-lg">
                           {item.description}
                         </p>
                       </div>

@@ -15,7 +15,7 @@ const MissionVision = () => {
           <span className="text-[#e05609] font-bold text-xs sm:text-sm tracking-wider uppercase">
             Our Core Compass
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mt-2">
+          <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-white mt-2">
             Mission, Vision & Principles
           </h2>
         </motion.div>

@@ -47,7 +47,7 @@ const FounderProfile = () => {
 
             {/* Name & Title */}
             <div>
-              <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-extrabold text-gray-950 tracking-tight leading-tight">
+              <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight leading-tight">
                 Ar. Prashant Verma
               </h2>
               <p className="text-[#e05609] font-bold text-sm sm:text-base mt-1">

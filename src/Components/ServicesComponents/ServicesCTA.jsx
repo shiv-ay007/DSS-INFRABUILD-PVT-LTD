@@ -12,7 +12,7 @@ const ServicesCTA = () => {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-12 text-center"
       >
-        <h2 className="text-2xl sm:text-3xl font-bold mb-4">
+        <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold mb-4">
           Need a Customized Turnkey Solution?
         </h2>
         <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto mb-8">

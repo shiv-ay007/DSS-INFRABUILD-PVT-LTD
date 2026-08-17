@@ -36,7 +36,7 @@ const BoardPhilosophy = () => {
           </div>
 
           {/* Large Quote Heading */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold text-white tracking-tight leading-[1.18] drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)] font-sans">
+          <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-white tracking-tight leading-[1.25] drop-shadow-[0_4px_16px_rgba(0,0,0,0.9)] font-sans">
             "A building is only as enduring as the{" "}
             <span className="text-[#e05609]">honesty of its foundations.</span>"
           </h2>

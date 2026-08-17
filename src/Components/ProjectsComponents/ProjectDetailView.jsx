@@ -178,7 +178,7 @@ const ProjectDetailView = () => {
           </nav>
 
           {/* Project Main Title */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight drop-shadow-md font-sans">
+          <h1 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-white tracking-tight leading-tight drop-shadow-md font-sans">
             {project.title}
           </h1>
 
@@ -272,7 +272,7 @@ const ProjectDetailView = () => {
             {/* 2. Project Overview */}
             <div className="space-y-4 text-left">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-950 tracking-tight">
+                <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight">
                   Project Overview
                 </h2>
                 <div className="w-16 h-1 bg-[#e05609] rounded-full mt-2" />

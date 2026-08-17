@@ -148,7 +148,7 @@ const ServiceDetailView = () => {
           >
             {/* Service Overview Heading & Paragraphs */}
             <div className="space-y-4 text-left">
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-950 tracking-tight">
+              <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight">
                 Service Overview
               </h2>
               <div className="w-16 h-1 bg-[#e05609] rounded-full mb-4" />

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiX, FiSend, FiLock, FiCheckCircle } from "react-icons/fi";
 import { servicesData } from "../../data/servicesData";
-
 import toast from "react-hot-toast";
 
 const WEB3FORMS_ACCESS_KEY = "27f30e7d-7b51-4e9f-b8c5-afd41a015e89";
@@ -10,22 +9,26 @@ const WEB3FORMS_ACCESS_KEY = "27f30e7d-7b51-4e9f-b8c5-afd41a015e89";
 const ServiceQuoteModal = ({
   isOpen,
   onClose,
-  serviceTitle = "Architectural Planning",
-  subServiceTitle = "Approval Drawing",
+  serviceTitle = "",
+  subServiceTitle = "",
 }) => {
   // Format initial service selection string
-  const initialSelection = subServiceTitle
-    ? `${serviceTitle} - ${subServiceTitle}`
-    : serviceTitle;
+  const initialSelection = serviceTitle
+    ? subServiceTitle
+      ? `${serviceTitle} - ${subServiceTitle}`
+      : serviceTitle
+    : "";
 
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
     service: initialSelection,
-    message: `I am interested in ${serviceTitle}${
-      subServiceTitle ? ` - ${subServiceTitle}` : ""
-    } service. Please provide me with a quote.`,
+    message: serviceTitle
+      ? `I am interested in ${serviceTitle}${
+          subServiceTitle ? ` - ${subServiceTitle}` : ""
+        } service. Please provide me with a quote.`
+      : "",
     dontShowAgain: false,
   });
 
@@ -35,16 +38,24 @@ const ServiceQuoteModal = ({
   // Sync state whenever modal opens or props change
   useEffect(() => {
     if (isOpen) {
-      const selectedValue = subServiceTitle
-        ? `${serviceTitle} - ${subServiceTitle}`
-        : serviceTitle;
+      const isSavedDontShow =
+        localStorage.getItem("dss_quote_modal_dont_show") === "true";
+
+      const selectedValue = serviceTitle
+        ? subServiceTitle
+          ? `${serviceTitle} - ${subServiceTitle}`
+          : serviceTitle
+        : "";
 
       setFormData((prev) => ({
         ...prev,
         service: selectedValue,
-        message: `I am interested in ${serviceTitle}${
-          subServiceTitle ? ` - ${subServiceTitle}` : ""
-        } service. Please provide me with a quote.`,
+        message: serviceTitle
+          ? `I am interested in ${serviceTitle}${
+              subServiceTitle ? ` - ${subServiceTitle}` : ""
+            } service. Please provide me with a quote.`
+          : prev.message || "",
+        dontShowAgain: isSavedDontShow,
       }));
       setSubmitted(false);
     }
@@ -67,10 +78,27 @@ const ServiceQuoteModal = ({
 
   if (!isOpen) return null;
 
+  const handleCheckboxChange = (e) => {
+    const checked = e.target.checked;
+    setFormData((prev) => ({
+      ...prev,
+      dontShowAgain: checked,
+    }));
+    if (checked) {
+      localStorage.setItem("dss_quote_modal_dont_show", "true");
+    } else {
+      localStorage.removeItem("dss_quote_modal_dont_show");
+    }
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
     const toastId = toast.loading("Sending quote request...");
+
+    if (formData.dontShowAgain) {
+      localStorage.setItem("dss_quote_modal_dont_show", "true");
+    }
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -82,30 +110,38 @@ const ServiceQuoteModal = ({
         body: JSON.stringify({
           access_key: WEB3FORMS_ACCESS_KEY,
           from_name: "DSS Infrabuild Quote Request",
-          subject: `New Quote Request: ${formData.fullName} (${formData.service})`,
+          subject: `New Quote Request: ${formData.fullName} (${
+            formData.service || "General Inquiry"
+          })`,
           name: formData.fullName,
           email: formData.email,
           phone: formData.phone || "Not provided",
-          service: formData.service,
-          message: formData.message,
+          service: formData.service || "General Construction & Engineering",
+          message: formData.message || "Request for consultation and quote.",
         }),
       });
 
       const data = await response.json();
 
       if (data.success) {
-        toast.success("Quote request sent successfully! We will contact you shortly.", {
-          id: toastId,
-        });
+        toast.success(
+          "Quote request sent successfully! We will contact you shortly.",
+          {
+            id: toastId,
+          }
+        );
         setSubmitted(true);
         setTimeout(() => {
           onClose();
           setSubmitted(false);
         }, 2500);
       } else {
-        toast.error(data.message || "Failed to send quote request. Please try again.", {
-          id: toastId,
-        });
+        toast.error(
+          data.message || "Failed to send quote request. Please try again.",
+          {
+            id: toastId,
+          }
+        );
       }
     } catch (err) {
       console.error("Web3Forms submission error:", err);
@@ -245,17 +281,22 @@ const ServiceQuoteModal = ({
                       setFormData({
                         ...formData,
                         service: newService,
-                        message: `I am interested in ${newService} service. Please provide me with a quote.`,
+                        message: newService
+                          ? `I am interested in ${newService} service. Please provide me with a quote.`
+                          : "",
                       });
                     }}
                     className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-xs sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#e05609]/30 focus:border-[#e05609] transition-all cursor-pointer"
                   >
+                    <option value="">Select a service...</option>
+
                     {/* Render matching specific sub-service option if selected */}
-                    {formData.service && (
-                      <option value={formData.service}>
-                        {formData.service}
-                      </option>
-                    )}
+                    {formData.service &&
+                      !servicesData.some((s) => s.title === formData.service) && (
+                        <option value={formData.service}>
+                          {formData.service}
+                        </option>
+                      )}
 
                     {servicesData.map((s) => (
                       <optgroup key={s.id} label={`--- ${s.title} ---`}>
@@ -282,6 +323,7 @@ const ServiceQuoteModal = ({
                   <textarea
                     rows="2"
                     required
+                    placeholder="Tell us about your project requirements..."
                     value={formData.message}
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
@@ -315,12 +357,7 @@ const ServiceQuoteModal = ({
                     <input
                       type="checkbox"
                       checked={formData.dontShowAgain}
-                      onChange={(e) =>
-                        setFormData({
-                          ...formData,
-                          dontShowAgain: e.target.checked,
-                        })
-                      }
+                      onChange={handleCheckboxChange}
                       className="rounded border-gray-300 text-[#e05609] focus:ring-[#e05609]"
                     />
                     <span className="text-[11px] text-gray-500">
@@ -338,3 +375,4 @@ const ServiceQuoteModal = ({
 };
 
 export default ServiceQuoteModal;
+

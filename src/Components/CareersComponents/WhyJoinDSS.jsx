@@ -38,7 +38,7 @@ const WhyJoinDSS = () => {
           <span className="text-[#e05609] font-bold text-xs sm:text-sm tracking-wider uppercase">
             Why Choose DSS
           </span>
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-950 mt-2">
+          <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-gray-950 mt-2">
             Empowering Builders & Engineers
           </h2>
         </motion.div>

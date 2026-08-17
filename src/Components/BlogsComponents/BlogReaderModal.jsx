@@ -47,7 +47,7 @@ const BlogReaderModal = ({ blog, onClose }) => {
             <span>•</span>
             <span>{blog.readTime}</span>
           </div>
-          <h1 className="text-xl sm:text-3xl font-bold text-gray-950 leading-tight">
+          <h1 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-gray-950 leading-tight">
             {blog.title}
           </h1>
           <div className="text-xs text-gray-500 pt-1">

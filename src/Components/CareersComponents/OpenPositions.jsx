@@ -126,7 +126,7 @@ const OpenPositions = () => {
             <span className="text-[#e05609] font-bold text-xs sm:text-sm tracking-wider uppercase">
               Current Opportunities
             </span>
-            <h2 className="text-2xl sm:text-3xl font-bold text-gray-950 mt-1">
+            <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold text-gray-950 mt-1">
               Explore Open Positions
             </h2>
             <p className="text-gray-600 text-sm mt-2">

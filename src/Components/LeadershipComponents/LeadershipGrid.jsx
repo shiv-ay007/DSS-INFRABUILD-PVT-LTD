@@ -74,7 +74,7 @@ const LeadershipGrid = () => {
           <span>OUR LEADERSHIP TEAM</span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-950 tracking-tight">
+        <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight">
           Meet Our <span className="text-[#e05609]">Core Team</span>
         </h2>
 

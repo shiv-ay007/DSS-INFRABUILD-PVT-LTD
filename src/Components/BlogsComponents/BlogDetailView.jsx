@@ -66,7 +66,7 @@ const BlogDetailView = () => {
           </nav>
 
           {/* Main Blog Title */}
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight drop-shadow-md font-sans">
+          <h1 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-white tracking-tight leading-tight drop-shadow-md font-sans">
             {blog.title}
           </h1>
 
@@ -132,7 +132,7 @@ const BlogDetailView = () => {
           {blog.keyPoints && blog.keyPoints.length > 0 && (
             <div className="space-y-4 pt-2">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-950 tracking-tight">
+                <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight">
                   {blog.keyPointsTitle || `Why This Matters in 2026`}
                 </h2>
                 <div className="w-16 h-1 bg-[#e05609] rounded-full mt-2" />
@@ -163,7 +163,7 @@ const BlogDetailView = () => {
           {blog.sections && blog.sections.length > 0 && (
             <div className="space-y-6 pt-2">
               <div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-950 tracking-tight">
+                <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight">
                   Top Practices & Innovations for 2026
                 </h2>
                 <div className="w-16 h-1 bg-[#e05609] rounded-full mt-2" />
@@ -189,7 +189,7 @@ const BlogDetailView = () => {
             blog.challengesAndSolutions.length > 0 && (
               <div className="space-y-4 pt-2">
                 <div>
-                  <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-950 tracking-tight">
+                  <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight">
                     Challenges and Solutions
                   </h2>
                   <div className="w-16 h-1 bg-[#e05609] rounded-full mt-2" />
@@ -224,7 +224,7 @@ const BlogDetailView = () => {
           {/* Conclusion Section */}
           <div className="space-y-4 pt-2">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-950 tracking-tight">
+              <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight">
                 Conclusion
               </h2>
               <div className="w-16 h-1 bg-[#e05609] rounded-full mt-2" />

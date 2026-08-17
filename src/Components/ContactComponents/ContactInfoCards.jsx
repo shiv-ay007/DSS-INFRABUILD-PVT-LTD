@@ -25,7 +25,7 @@ const ContactInfoCards = () => {
     >
       {/* Top Header */}
       <div className="space-y-3">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-950 tracking-tight leading-tight">
+        <h2 className="text-[1.3rem] sm:text-[2.2rem] font-extrabold text-gray-950 tracking-tight leading-tight">
           Let's discuss your <span className="text-[#e05609]">next project</span>
         </h2>
         <p className="text-gray-600 text-xs sm:text-sm leading-relaxed max-w-lg">

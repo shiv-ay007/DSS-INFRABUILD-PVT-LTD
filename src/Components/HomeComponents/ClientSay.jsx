@@ -63,9 +63,27 @@ const ClientSay = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [activeBtn, setActiveBtn] = useState(null); // 'prev' | 'next' | null
+  const [isMobile, setIsMobile] = useState(false);
 
-  // On desktop, 2 testimonials per page = 3 pages total
-  const totalPages = Math.ceil(testimonialsData.length / 2);
+  // Check screen size for responsive 1 card (mobile) vs 2 cards (desktop)
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const cardsPerPage = isMobile ? 1 : 2;
+  const totalPages = Math.ceil(testimonialsData.length / cardsPerPage);
+
+  // Reset page index if resizing changes totalPages
+  useEffect(() => {
+    if (currentPage >= totalPages) {
+      setCurrentPage(0);
+    }
+  }, [totalPages, currentPage]);
 
   // Next Page Handler
   const handleNext = (manual = false) => {
@@ -117,7 +135,7 @@ const ClientSay = () => {
               </span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-tight">
+            <h2 className="text-[1.3rem] sm:text-[2.2rem] font-bold tracking-tight text-white leading-tight">
               What Our <span className="text-[#e05609]">Clients Say</span>
             </h2>
 
@@ -165,7 +183,7 @@ const ClientSay = () => {
         </motion.div>
 
         {/* ========================================================================= */}
-        {/* 2. TESTIMONIALS SLIDER (2 CARDS PER PAGE ON DESKTOP)                      */}
+        {/* 2. TESTIMONIALS SLIDER (1 CARD ON MOBILE, 2 CARDS ON DESKTOP)             */}
         {/* ========================================================================= */}
         <div
           className="relative overflow-hidden w-full"
@@ -179,15 +197,21 @@ const ClientSay = () => {
             }}
           >
             {Array.from({ length: totalPages }).map((_, pageIdx) => {
-              const card1 = testimonialsData[pageIdx * 2];
-              const card2 = testimonialsData[pageIdx * 2 + 1];
+              const pageCards = isMobile
+                ? [testimonialsData[pageIdx]].filter(Boolean)
+                : [
+                    testimonialsData[pageIdx * 2],
+                    testimonialsData[pageIdx * 2 + 1],
+                  ].filter(Boolean);
 
               return (
                 <div
                   key={pageIdx}
-                  className="w-full min-w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6"
+                  className={`w-full min-w-full flex-shrink-0 grid gap-5 sm:gap-6 ${
+                    isMobile ? "grid-cols-1" : "grid-cols-1 md:grid-cols-2"
+                  }`}
                 >
-                  {[card1, card2].filter(Boolean).map((item) => (
+                  {pageCards.map((item) => (
                     <div
                       key={item.id}
                       className="group relative rounded-xl p-6 sm:p-7 bg-[#161619] border border-neutral-800/80 hover:border-[#e05609]/50 flex flex-col justify-between min-h-[260px] sm:min-h-[280px] transition-colors duration-150 cursor-pointer"
