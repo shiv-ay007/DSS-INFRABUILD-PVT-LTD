@@ -11,6 +11,7 @@ const ServiceQuoteModal = ({
   onClose,
   serviceTitle = "",
   subServiceTitle = "",
+  showDontShowAgain = false,
 }) => {
   // Format initial service selection string
   const initialSelection = serviceTitle
@@ -96,7 +97,7 @@ const ServiceQuoteModal = ({
     setIsSubmitting(true);
     const toastId = toast.loading("Sending quote request...");
 
-    if (formData.dontShowAgain) {
+    if (showDontShowAgain && formData.dontShowAgain) {
       localStorage.setItem("dss_quote_modal_dont_show", "true");
     }
 
@@ -269,7 +270,7 @@ const ServiceQuoteModal = ({
                   />
                 </div>
 
-                {/* Service Interested In Dropdown (5 Main Services Only) */}
+                {/* Service Interested In Dropdown */}
                 <div>
                   <label className="block text-xs font-semibold text-gray-700 mb-1">
                     Service Interested In
@@ -289,6 +290,21 @@ const ServiceQuoteModal = ({
                     className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-xs sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#e05609]/30 focus:border-[#e05609] transition-all cursor-pointer"
                   >
                     <option value="">Select a service...</option>
+
+                    {/* Auto-fill & select specific clicked sub-service / custom service */}
+                    {formData.service &&
+                      ![
+                        "Architectural Planning",
+                        "Construction",
+                        "Interior Design",
+                        "Fabrication Works",
+                        "Consultancy",
+                      ].includes(formData.service) && (
+                        <option value={formData.service}>
+                          {formData.service}
+                        </option>
+                      )}
+
                     <option value="Architectural Planning">Architectural Planning</option>
                     <option value="Construction">Construction</option>
                     <option value="Interior Design">Interior Design</option>
@@ -328,24 +344,26 @@ const ServiceQuoteModal = ({
                   </span>
                 </motion.button>
 
-                {/* Footer Security Note & Checkbox */}
-                <div className="pt-1.5 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-2">
+                {/* Footer Security Note & Conditional Checkbox */}
+                <div className={`pt-1.5 flex flex-col sm:flex-row items-center ${showDontShowAgain ? "justify-between" : "justify-center"} text-xs text-gray-500 gap-2`}>
                   <div className="flex items-center space-x-1.5">
                     <FiLock className="text-gray-400 text-xs" />
                     <span>Your information is secure & confidential</span>
                   </div>
 
-                  <label className="flex items-center space-x-1.5 cursor-pointer select-none">
-                    <input
-                      type="checkbox"
-                      checked={formData.dontShowAgain}
-                      onChange={handleCheckboxChange}
-                      className="rounded border-gray-300 text-[#e05609] focus:ring-[#e05609]"
-                    />
-                    <span className="text-[11px] text-gray-500">
-                      Don't show this again
-                    </span>
-                  </label>
+                  {showDontShowAgain && (
+                    <label className="flex items-center space-x-1.5 cursor-pointer select-none">
+                      <input
+                        type="checkbox"
+                        checked={formData.dontShowAgain}
+                        onChange={handleCheckboxChange}
+                        className="rounded border-gray-300 text-[#e05609] focus:ring-[#e05609]"
+                      />
+                      <span className="text-[11px] text-gray-500">
+                        Don't show this again
+                      </span>
+                    </label>
+                  )}
                 </div>
               </form>
             </>
