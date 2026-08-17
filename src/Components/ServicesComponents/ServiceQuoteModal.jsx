@@ -269,7 +269,7 @@ const ServiceQuoteModal = ({
                   />
                 </div>
 
-                {/* Service Interested In Dropdown (Includes All Services & Sub-Services) */}
+                {/* Service Interested In Dropdown (5 Main Services Only) */}
                 <div>
                   <label className="block text-xs font-semibold text-gray-700 mb-1">
                     Service Interested In
@@ -289,29 +289,11 @@ const ServiceQuoteModal = ({
                     className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-xs sm:text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#e05609]/30 focus:border-[#e05609] transition-all cursor-pointer"
                   >
                     <option value="">Select a service...</option>
-
-                    {/* Render matching specific sub-service option if selected */}
-                    {formData.service &&
-                      !servicesData.some((s) => s.title === formData.service) && (
-                        <option value={formData.service}>
-                          {formData.service}
-                        </option>
-                      )}
-
-                    {servicesData.map((s) => (
-                      <optgroup key={s.id} label={`--- ${s.title} ---`}>
-                        <option value={s.title}>{s.title} (General)</option>
-                        {s.subServices?.map((sub) => {
-                          const optionVal = `${s.title} - ${sub.title}`;
-                          if (optionVal === formData.service) return null;
-                          return (
-                            <option key={sub.id} value={optionVal}>
-                              {s.title} - {sub.title}
-                            </option>
-                          );
-                        })}
-                      </optgroup>
-                    ))}
+                    <option value="Architectural Planning">Architectural Planning</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Interior Design">Interior Design</option>
+                    <option value="Fabrication Works">Fabrication Works</option>
+                    <option value="Consultancy">Consultancy</option>
                   </select>
                 </div>
 
